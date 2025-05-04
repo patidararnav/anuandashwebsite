@@ -5,7 +5,7 @@ import Button from '../styles/Button';
 
 // Album image for background
 import albumImage from '../assets/landings/landing5.jpg';
-// Song images
+// Album cover images
 import eddiesAtticImage from '../assets/songs/eddiesattic.jpg';
 import coversImage from '../assets/songs/covers.jpg';
 
@@ -76,13 +76,17 @@ const SongsSection = styled.section`
   margin: var(--spacing-xl) 0;
 `;
 
-const SongsGrid = styled.div`
+const AlbumsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-xl);
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
-const SongCard = styled(motion.div)`
+const AlbumCard = styled(motion.div)`
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
@@ -94,7 +98,7 @@ const SongCard = styled(motion.div)`
   height: 100%;
 `;
 
-const SongImage = styled.div`
+const AlbumImage = styled.div`
   aspect-ratio: 1;
   width: 100%;
   overflow: hidden;
@@ -116,31 +120,32 @@ const SongImage = styled.div`
     transition: opacity 0.3s ease;
   }
   
-  ${SongCard}:hover & {
+  ${AlbumCard}:hover & {
     transform: scale(1.02);
   }
 `;
 
-const SongInfo = styled.div`
+const AlbumInfo = styled.div`
   padding: var(--spacing-md);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 `;
 
-const SongTitle = styled.h3`
+const AlbumTitle = styled.h3`
   margin-bottom: var(--spacing-xs);
   color: var(--white);
+  font-size: 1.5rem;
 `;
 
-const SongType = styled.div`
+const AlbumType = styled.div`
   font-size: var(--fs-sm);
   opacity: 0.8;
   margin-bottom: var(--spacing-md);
   color: var(--secondary);
 `;
 
-const SongDescription = styled.p`
+const AlbumDescription = styled.p`
   font-size: var(--fs-sm);
   margin-bottom: var(--spacing-md);
   color: var(--white);
@@ -148,46 +153,35 @@ const SongDescription = styled.p`
   flex-grow: 1;
 `;
 
-const SongLinks = styled.div`
+const AlbumTrackCount = styled.div`
+  font-size: var(--fs-sm);
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+  opacity: 0.7;
+`;
+
+const AlbumLinks = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--spacing-sm);
   margin-top: auto;
 `;
 
-const SongLink = styled.a`
-  font-size: 1.2rem;
-  color: var(--white);
-  opacity: 0.7;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  
-  &:hover {
-    opacity: 1;
-    color: var(--secondary);
-  }
-  
-  i {
-    margin-right: 8px;
-  }
-`;
-
-const SpotifyButton = styled.a`
+const PlatformButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.8rem 1.5rem;
   background-color: var(--white);
-  color: #1DB954;
+  color: ${props => props.color || '#000'};
   border-radius: 50px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin-top: var(--spacing-xs);
+  flex: 1;
+  min-width: 120px;
   
   &:hover {
     transform: translateY(-3px);
@@ -200,74 +194,35 @@ const SpotifyButton = styled.a`
   }
 `;
 
-const EmbedSection = styled.section`
-  margin: var(--spacing-xxl) 0;
-  
-  h2 {
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-    color: var(--white);
-  }
-`;
-
 const Listen = () => {
-  // Song data
-  const songs = [
+  // Album data
+  const albums = [
     {
       id: 1,
-      title: "Summer Song",
-      type: "Original",
-      description: "[Description Here]",
-      spotify: "https://open.spotify.com/track/1AGK4t0zQ0MaJvkxCgqaYq?si=bff9eb78a34242a0"
+      title: "Anu & Ash at Eddie's Attic (Live)",
+      type: "Album",
+      description: "Our debut live album features original songs performed at the iconic Eddie's Attic venue in Atlanta. Experience the energy and emotion of our live performance through these heartfelt originals.",
+      trackCount: 7,
+      coverImage: eddiesAtticImage,
+      spotify: "https://open.spotify.com/album/39gQdVgmqSOhtkskKG3iLR"
     },
     {
       id: 2,
-      title: "Between the Two of Us",
-      type: "Original",
-      description: "[Description Here]",
-      spotify: "https://open.spotify.com/track/3tkZLjc0QFUzOct78ifMcG?si=a728bbae50764c1b"
-    },
-    {
-      id: 3,
-      title: "All I Feel is You",
-      type: "Original",
-      description: "[Description Here]",
-      spotify: "https://open.spotify.com/track/4DqLcQBfUxxC1guaVezRB1?si=f84404d6abbe4a1b"
-    },
-    {
-      id: 4,
-      title: "Family Cotton",
-      type: "Original",
-      description: "[Description Here]",
-      spotify: "https://open.spotify.com/track/00R6vO8xZ9SrmXBVC1wrHr?si=d6af3c3ad3954b37"
-    },
-    {
-      id: 5,
-      title: "Vellai Pookal - A Melody in Hamsadhwani",
-      type: "Cover",
-      description: "[Description Here]",
-      spotify: "https://open.spotify.com/track/2JjDQImh8oZPSgUCqhEhPs?si=f3b99601adca4331"
-    },
-    {
-      id: 6,
-      title: "The Prayer",
-      type: "Cover",
-      description: "[Description Here]",
-      spotify: "https://open.spotify.com/track/2kxv6hjfHUXYGxq0eLQtpB?si=bf9239d41cad4832"
+      title: "Covers by Anu & Ash at Eddie's Attic (Live)",
+      type: "EP",
+      description: "Our cover EP showcases our unique interpretations of beloved songs, all performed live at Eddie's Attic.",
+      trackCount: 5,
+      coverImage: coversImage,
+      spotify: "https://open.spotify.com/album/2hEw69hjqykn9n4FNETv0J"
     }
   ];
-
-  // Function to determine which image to use based on song type
-  const getSongImage = (songType) => {
-    return songType === "Cover" ? coversImage : eddiesAtticImage;
-  };
 
   return (
     <PageWrapper>
       <Container>
         <PageHeader>
           <h1>Listen to Our Music</h1>
-          <p>Experience the sound of Anu & Ash through our original songs and covers</p>
+          <p>Experience the sound of Anu & Ash through our albums and EPs</p>
         </PageHeader>
         
         <StreamingPlatforms>
@@ -300,34 +255,33 @@ const Listen = () => {
         </StreamingPlatforms>
 
         <SongsSection>
-          <h2 style={{ color: 'var(--white)', marginBottom: 'var(--spacing-md)' }}>Featured Songs</h2>
+          <h2 style={{ color: 'var(--white)', marginBottom: 'var(--spacing-md)' }}>Featured Works</h2>
           
-          <SongsGrid>
-            {songs.map(song => (
-              <SongCard
-                key={song.id}
+          <AlbumsGrid>
+            {albums.map(album => (
+              <AlbumCard
+                key={album.id}
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.4 }}
               >
-                <SongImage coverImage={getSongImage(song.type)}>
-                  {/* No need for the placeholder text with actual images */}
-                </SongImage>
-                <SongInfo>
-                  <SongTitle>{song.title}</SongTitle>
-                  <SongType>{song.type}</SongType>
-                  <SongDescription>{song.description}</SongDescription>
-                  <SongLinks>
-                    {song.spotify && (
-                      <SpotifyButton href={song.spotify} target="_blank" rel="noopener noreferrer">
+                <AlbumImage coverImage={album.coverImage} />
+                <AlbumInfo>
+                  <AlbumTitle>{album.title}</AlbumTitle>
+                  <AlbumType>{album.type}</AlbumType>
+                  <AlbumDescription>{album.description}</AlbumDescription>
+                  <AlbumTrackCount>{album.trackCount} tracks</AlbumTrackCount>
+                  <AlbumLinks>
+                    {album.spotify && (
+                      <PlatformButton href={album.spotify} target="_blank" rel="noopener noreferrer" color="#1DB954" style={{ width: '100%' }}>
                         <i className="fab fa-spotify"></i>
                         Listen on Spotify
-                      </SpotifyButton>
+                      </PlatformButton>
                     )}
-                  </SongLinks>
-                </SongInfo>
-              </SongCard>
+                  </AlbumLinks>
+                </AlbumInfo>
+              </AlbumCard>
             ))}
-          </SongsGrid>
+          </AlbumsGrid>
         </SongsSection>
 
       </Container>

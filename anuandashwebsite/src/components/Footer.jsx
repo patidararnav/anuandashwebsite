@@ -205,7 +205,7 @@ const Footer = () => {
               <SocialLink href="https://instagram.com/anuandash" target="_blank" aria-label="Instagram">
                 <img src={instagramIcon} alt="Instagram" />
               </SocialLink>
-              <SocialLink href="https://music.youtube.com/channel/UCM6ClyrCSXfB_DrtFevJOaQ" target="_blank" aria-label="YouTube">
+              <SocialLink href="https://www.youtube.com/channel/UCcBuySXj-zaZsFkPJMIxhig" target="_blank" aria-label="YouTube">
                 <img src={youtubeIcon} alt="YouTube" />
               </SocialLink>
               <SocialLink href="https://open.spotify.com/artist/2noTeVrjCU2I1J882nL2vj" target="_blank" aria-label="Spotify">

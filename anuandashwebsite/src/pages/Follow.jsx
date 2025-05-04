@@ -230,7 +230,7 @@ const Follow = () => {
             </PlatformCard>
             
             <PlatformCard 
-              href="https://music.youtube.com/channel/UCM6ClyrCSXfB_DrtFevJOaQ" 
+              href="https://www.youtube.com/channel/UCcBuySXj-zaZsFkPJMIxhig" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ y: -5 }}
