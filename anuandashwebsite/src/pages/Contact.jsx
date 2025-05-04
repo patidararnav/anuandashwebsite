@@ -4,6 +4,11 @@ import { motion } from 'framer-motion';
 import Container from '../styles/Container';
 import Button from '../styles/Button';
 
+// Import custom icons
+import emailIcon from '../assets/icons/email.png';
+import locationIcon from '../assets/icons/location.png';
+import bookingIcon from '../assets/icons/booking.png';
+
 const PageHeader = styled.div`
   text-align: center;
   margin-bottom: var(--spacing-xl);
@@ -56,7 +61,13 @@ const ContactIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: var(--spacing-md);
-  font-size: 1.2rem;
+  
+  img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Convert icons to white */
+  }
 `;
 
 const ContactText = styled.div`
@@ -215,7 +226,7 @@ const Contact = () => {
           <ContactOptions>
             <ContactOption>
               <ContactIcon>
-                <i className="fas fa-envelope"></i>
+                <img src={emailIcon} alt="Email" />
               </ContactIcon>
               <ContactText>
                 <h4>Email</h4>
@@ -226,7 +237,7 @@ const Contact = () => {
             
             <ContactOption>
               <ContactIcon>
-                <i className="fas fa-map-marker-alt"></i>
+                <img src={locationIcon} alt="Location" />
               </ContactIcon>
               <ContactText>
                 <h4>Location</h4>
@@ -236,7 +247,7 @@ const Contact = () => {
             
             <ContactOption>
               <ContactIcon>
-                <i className="fas fa-music"></i>
+                <img src={bookingIcon} alt="Bookings" />
               </ContactIcon>
               <ContactText>
                 <h4>Bookings</h4>

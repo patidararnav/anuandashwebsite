@@ -290,7 +290,7 @@ const Listen = () => {
           </PlatformLink>
           
           <PlatformLink 
-            href="https://www.youtube.com/@anuandash" 
+            href="https://music.youtube.com/channel/UCM6ClyrCSXfB_DrtFevJOaQ" 
             target="_blank"
             rel="noopener noreferrer"
           >
