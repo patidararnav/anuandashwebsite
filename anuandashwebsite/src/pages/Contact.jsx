@@ -238,7 +238,7 @@ const Contact = () => {
     
     // EmailJS service configuration
     // You need to replace these with your actual EmailJS credentials
-    const serviceId = 'service_om7exik '; // Replace with your EmailJS service ID
+    const serviceId = 'service_om7exik'; // Replace with your EmailJS service ID
     const templateId = 'template_zcuybgn'; // Replace with your EmailJS template ID
     const publicKey = 'irYIZGqJ2Fzw7yeSQ'; // Replace with your EmailJS public key
     
