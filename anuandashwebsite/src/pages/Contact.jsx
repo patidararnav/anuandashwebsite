@@ -238,9 +238,9 @@ const Contact = () => {
     
     // EmailJS service configuration
     // You need to replace these with your actual EmailJS credentials
-    const serviceId = 'default_service'; // Replace with your EmailJS service ID
-    const templateId = 'template_contact_form'; // Replace with your EmailJS template ID
-    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+    const serviceId = 'service_om7exik '; // Replace with your EmailJS service ID
+    const templateId = 'template_zcuybgn'; // Replace with your EmailJS template ID
+    const publicKey = 'irYIZGqJ2Fzw7yeSQ'; // Replace with your EmailJS public key
     
     emailjs.sendForm(serviceId, templateId, form.current, publicKey)
       .then((result) => {
