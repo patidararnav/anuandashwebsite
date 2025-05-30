@@ -159,9 +159,10 @@ const mockShowsData = [
 const mockPastShows = [
   {
     id: 2,
-    title: 'Placeholder Old Show',
-    date: new Date('2023-10-15T19:30:00'),
-    location: 'Atlanta, GA',
+    title: 'Eddie\'s Attic - Anu & Ash Live in Concert',
+    date: new Date('2024-09-27T21:00:00'),
+    location: 'Decatur, GA',
+    ticketLink: 'https://eddiesattic.com/event/anu-and-ash/', 
     featured: true
   }
 ];

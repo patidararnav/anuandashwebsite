@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Container from '../styles/Container';
 import Button from '../styles/Button';
+import ShopifyProduct from '../components/ShopifyProduct';
 
 // Images
 import merchImage from '../assets/landings/landing5.jpg';
@@ -42,9 +43,12 @@ const PageHeader = styled.div`
 
 const MerchandiseGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: var(--spacing-xl);
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--spacing-xl) * 2);
   margin: var(--spacing-xl) 0;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const MerchandiseCard = styled.div`
@@ -55,6 +59,11 @@ const MerchandiseCard = styled.div`
   transition: transform 0.3s ease;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem 2rem;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   &:hover {
     transform: translateY(-5px);
@@ -108,43 +117,10 @@ const Merchandise = () => {
         
         <MerchandiseGrid>
           <MerchandiseCard>
-            <MerchandiseImage>T-Shirt Image Placeholder</MerchandiseImage>
-            <MerchandiseInfo>
-              <ComingSoonBadge>Coming Soon</ComingSoonBadge>
-              <MerchandiseTitle>Anu & Ash Logo Tee</MerchandiseTitle>
-              <MerchandisePrice>$25.00</MerchandisePrice>
-              <Button disabled small>Shop Now</Button>
-            </MerchandiseInfo>
+            <ShopifyProduct productId="7488612368461" nodeId="product-component-1748583864650" />
           </MerchandiseCard>
-          
           <MerchandiseCard>
-            <MerchandiseImage>Hoodie Image Placeholder</MerchandiseImage>
-            <MerchandiseInfo>
-              <ComingSoonBadge>Coming Soon</ComingSoonBadge>
-              <MerchandiseTitle>Tour Hoodie</MerchandiseTitle>
-              <MerchandisePrice>$45.00</MerchandisePrice>
-              <Button disabled small>Shop Now</Button>
-            </MerchandiseInfo>
-          </MerchandiseCard>
-          
-          <MerchandiseCard>
-            <MerchandiseImage>Hat Image Placeholder</MerchandiseImage>
-            <MerchandiseInfo>
-              <ComingSoonBadge>Coming Soon</ComingSoonBadge>
-              <MerchandiseTitle>Snapback Cap</MerchandiseTitle>
-              <MerchandisePrice>$22.00</MerchandisePrice>
-              <Button disabled small>Shop Now</Button>
-            </MerchandiseInfo>
-          </MerchandiseCard>
-          
-          <MerchandiseCard>
-            <MerchandiseImage>Poster Image Placeholder</MerchandiseImage>
-            <MerchandiseInfo>
-              <ComingSoonBadge>Coming Soon</ComingSoonBadge>
-              <MerchandiseTitle>Album Poster</MerchandiseTitle>
-              <MerchandisePrice>$15.00</MerchandisePrice>
-              <Button disabled small>Shop Now</Button>
-            </MerchandiseInfo>
+            <ShopifyProduct productId="7488882901069" nodeId="product-component-1748583919176" />
           </MerchandiseCard>
         </MerchandiseGrid>
       </Container>
