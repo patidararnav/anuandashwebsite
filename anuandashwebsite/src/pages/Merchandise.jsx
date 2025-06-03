@@ -52,21 +52,23 @@ const MerchandiseGrid = styled.div`
 `;
 
 const MerchandiseCard = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2.5rem 2rem;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  color: #333;
   
   &:hover {
     transform: translateY(-5px);
+  }
+  
+  /* Ensure Shopify embed text is visible */
+  * {
+    color: inherit;
   }
 `;
 

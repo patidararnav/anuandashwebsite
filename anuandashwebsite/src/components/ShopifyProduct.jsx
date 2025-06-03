@@ -42,30 +42,47 @@ const ShopifyProduct = ({ productId, nodeId }) => {
               styles: {
                 product: {
                   '@media (min-width: 601px)': {
-                    'max-width': '100%',
-                    'margin-left': '0',
-                    'margin-bottom': '50px',
+                    'max-width': '100% !important',
+                    'margin-left': '0 !important',
+                    'margin-bottom': '50px !important',
                   },
-                  'text-align': 'left',
-                  color: '#fff',
+                  'text-align': 'left !important',
                 },
-                title: { 'font-size': '26px', color: '#fff' },
+                title: { 
+                  'font-size': '24px !important', 
+                  'font-weight': 'bold !important',
+                  'margin-bottom': '10px !important',
+                },
                 button: {
-                  ':hover': { 'background-color': '#c13b47' },
-                  'background-color': '#d6424f',
-                  ':focus': { 'background-color': '#c13b47' },
-                  color: '#fff',
+                  ':hover': { 'background-color': '#c13b47 !important' },
+                  'background-color': '#d6424f !important',
+                  ':focus': { 'background-color': '#c13b47 !important' },
+                  color: '#fff !important',
+                  'border': 'none !important',
+                  'border-radius': '4px !important',
+                  'padding': '12px 24px !important',
+                  'font-weight': '600 !important'
                 },
-                price: { 'font-size': '18px', color: '#fff' },
-                compareAt: { 'font-size': '15.3px', color: '#fff' },
-                unitPrice: { 'font-size': '15.3px', color: '#fff' },
-                description: { color: '#fff' },
+                price: { 
+                  'font-size': '18px !important', 
+                  'font-weight': 'bold !important',
+                  'margin-bottom': '10px !important',
+                },
+                compareAt: { 
+                  'font-size': '15px !important', 
+                },
+                unitPrice: { 
+                  'font-size': '15px !important', 
+                },
+                description: { 
+                  'margin-bottom': '15px !important',
+                },
               },
               layout: 'horizontal',
               contents: {
                 img: false,
                 imgWithCarousel: true,
-                description: true,
+                description: true
               },
               width: '100%',
               text: { button: 'Add to cart' },
@@ -73,10 +90,10 @@ const ShopifyProduct = ({ productId, nodeId }) => {
             cart: {
               styles: {
                 button: {
-                  ':hover': { 'background-color': '#c13b47' },
-                  'background-color': '#d6424f',
-                  ':focus': { 'background-color': '#c13b47' },
-                  color: '#fff',
+                  ':hover': { 'background-color': '#c13b47 !important' },
+                  'background-color': '#d6424f !important',
+                  ':focus': { 'background-color': '#c13b47 !important' },
+                  color: '#fff !important',
                 },
               },
               text: { total: 'Subtotal', button: 'Checkout' },
@@ -85,10 +102,10 @@ const ShopifyProduct = ({ productId, nodeId }) => {
             toggle: {
               styles: {
                 toggle: {
-                  'background-color': '#d6424f',
-                  ':hover': { 'background-color': '#c13b47' },
-                  ':focus': { 'background-color': '#c13b47' },
-                  color: '#fff',
+                  'background-color': '#d6424f !important',
+                  ':hover': { 'background-color': '#c13b47 !important' },
+                  ':focus': { 'background-color': '#c13b47 !important' },
+                  color: '#fff !important',
                 },
               },
             },
