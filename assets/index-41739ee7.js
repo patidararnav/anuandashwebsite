@@ -1506,7 +1506,7 @@ object-assign
     grid-template-columns: 1fr;
   }
 `,bh=k.div`
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
