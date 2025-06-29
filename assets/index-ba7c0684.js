@@ -590,7 +590,7 @@ object-assign
     z-index: 2;
     color: var(--white);
   }
-`,Kb=()=>{const[e,t]=w.useState("upcoming"),n=e==="upcoming"?Xb:Gb,r=a=>a.getDate(),i=a=>a.toLocaleString("default",{month:"short"}),o=a=>a.getFullYear(),s=a=>a.toLocaleString("en-US",{hour:"numeric",minute:"numeric",hour12:!0});return p.jsx(Jb,{children:p.jsxs(lt,{children:[p.jsxs(Lb,{children:[p.jsx("h1",{children:"Shows"}),p.jsx("p",{children:"Come experience the music of Anu & Ash live in concert"})]}),p.jsxs(Mb,{children:[p.jsxs(Ob,{children:[p.jsx(kh,{active:e==="upcoming",onClick:()=>t("upcoming"),children:"Upcoming Shows"}),p.jsx(kh,{active:e==="past",onClick:()=>t("past"),children:"Past Shows"})]}),p.jsx(Db,{children:n.length>0?n.map(a=>p.jsxs(Fb,{className:a.featured?"featured":"",initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.4},children:[p.jsxs(Ib,{children:[p.jsx(_b,{children:r(a.date)}),p.jsx(Nb,{children:i(a.date)}),p.jsx(Vb,{children:o(a.date)})]}),p.jsxs(zb,{children:[p.jsx($b,{children:a.title}),p.jsx(Bb,{children:a.location}),p.jsx(Ub,{children:s(a.date)})]}),p.jsx(Hb,{children:a.ticketLink?p.jsx(me,{as:"a",href:a.ticketLink,target:"_blank",rel:"noopener noreferrer",small:!0,children:"Get Tickets"}):p.jsx(me,{disabled:!0,small:!0,children:"Past Event"})})]},a.id)):p.jsxs(Wb,{children:[p.jsxs("h3",{children:["No ",e," shows at the moment"]}),p.jsx("p",{children:"Check back soon for updates on our performance schedule!"})]})})]})]})})},dv="/assets/landing5-f2f98a31.jpg",Yb="/assets/eddiesattic-119739dd.jpg",Zb="/assets/covers-b7659218.jpg",Qb=k.div`
+`,Kb=()=>{const[e,t]=w.useState("upcoming"),n=e==="upcoming"?Xb:Gb,r=a=>a.getDate(),i=a=>a.toLocaleString("default",{month:"short"}),o=a=>a.getFullYear(),s=a=>a.toLocaleString("en-US",{hour:"numeric",minute:"numeric",hour12:!0});return p.jsx(Jb,{children:p.jsxs(lt,{children:[p.jsxs(Lb,{children:[p.jsx("h1",{children:"Shows"}),p.jsx("p",{children:"Come experience the music of Anu & Ash live in concert"})]}),p.jsxs(Mb,{children:[p.jsxs(Ob,{children:[p.jsx(kh,{active:e==="upcoming",onClick:()=>t("upcoming"),children:"Upcoming Shows"}),p.jsx(kh,{active:e==="past",onClick:()=>t("past"),children:"Past Shows"})]}),p.jsx(Db,{children:n.length>0?n.map(a=>p.jsxs(Fb,{className:a.featured?"featured":"",initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.4},children:[p.jsxs(Ib,{children:[p.jsx(_b,{children:r(a.date)}),p.jsx(Nb,{children:i(a.date)}),p.jsx(Vb,{children:o(a.date)})]}),p.jsxs(zb,{children:[p.jsx($b,{children:a.title}),p.jsx(Bb,{children:a.location}),p.jsx(Ub,{children:s(a.date)})]}),p.jsx(Hb,{children:a.ticketLink?p.jsx(me,{as:"a",href:a.ticketLink,target:"_blank",rel:"noopener noreferrer",small:!0,children:"Get Tickets"}):p.jsx(me,{disabled:!0,small:!0,children:"Past Event"})})]},a.id)):p.jsxs(Wb,{children:[p.jsxs("h3",{children:["No ",e," shows at the moment"]}),p.jsx("p",{children:"Check back soon for updates on our performance schedule!"})]})})]})]})})},dv="/assets/landing5-f2f98a31.jpg",Yb="/assets/eddiesattic-119739dd.jpg",Zb="/assets/covers-b7659218.jpg",Qb="/assets/summersong-c5cc5063.jpg",qb=k.div`
   min-height: 100vh;
   background: url(${dv}) center 20% / cover no-repeat fixed;
   position: relative;
@@ -611,7 +611,7 @@ object-assign
     z-index: 2;
     color: var(--white);
   }
-`,qb=k.div`
+`,ej=k.div`
   text-align: center;
   margin-bottom: var(--spacing-xl);
   padding-top: 100px;
@@ -619,7 +619,7 @@ object-assign
   h1 {
     margin-bottom: var(--spacing-sm);
   }
-`,ej=k.div`
+`,tj=k.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -644,9 +644,9 @@ object-assign
   i {
     font-size: 1.5rem;
   }
-`,tj=k.section`
+`,nj=k.section`
   margin: var(--spacing-xl) 0;
-`,nj=k.div`
+`,rj=k.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-xl);
@@ -664,7 +664,7 @@ object-assign
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   height: 100%;
-`,rj=k.div`
+`,ij=k.div`
   aspect-ratio: 1;
   width: 100%;
   overflow: hidden;
@@ -689,37 +689,37 @@ object-assign
   ${fv}:hover & {
     transform: scale(1.02);
   }
-`,ij=k.div`
+`,oj=k.div`
   padding: var(--spacing-md);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-`,oj=k.h3`
+`,sj=k.h3`
   margin-bottom: var(--spacing-xs);
   color: var(--white);
   font-size: 1.5rem;
-`,sj=k.div`
+`,aj=k.div`
   font-size: var(--fs-sm);
   opacity: 0.8;
   margin-bottom: var(--spacing-md);
   color: var(--secondary);
-`,aj=k.p`
+`,lj=k.p`
   font-size: var(--fs-sm);
   margin-bottom: var(--spacing-md);
   color: var(--white);
   opacity: 0.9;
   flex-grow: 1;
-`,lj=k.div`
+`,uj=k.div`
   font-size: var(--fs-sm);
   margin-bottom: var(--spacing-md);
   color: var(--white);
   opacity: 0.7;
-`,uj=k.div`
+`,cj=k.div`
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   margin-top: auto;
-`,cj=k.a`
+`,dj=k.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -744,7 +744,7 @@ object-assign
     margin-right: 8px;
     font-size: 1.2rem;
   }
-`,dj=()=>{const e=[{id:1,title:"Anu & Ash at Eddie's Attic (Live)",type:"Album",description:"Our debut live album features original songs performed at the iconic Eddie's Attic venue in Atlanta. Experience the energy and emotion of our live performance through these heartfelt originals.",trackCount:7,coverImage:Yb,spotify:"https://open.spotify.com/album/39gQdVgmqSOhtkskKG3iLR"},{id:2,title:"Covers by Anu & Ash at Eddie's Attic (Live)",type:"EP",description:"Our cover EP showcases our unique interpretations of beloved songs, all performed live at Eddie's Attic.",trackCount:5,coverImage:Zb,spotify:"https://open.spotify.com/album/2hEw69hjqykn9n4FNETv0J"}];return p.jsx(Qb,{children:p.jsxs(lt,{children:[p.jsxs(qb,{children:[p.jsx("h1",{children:"Listen to Our Music"}),p.jsx("p",{children:"Experience the sound of Anu & Ash through our albums and EPs"})]}),p.jsxs(ej,{children:[p.jsxs(Dl,{href:"https://open.spotify.com/artist/2noTeVrjCU2I1J882nL2vj",target:"_blank",rel:"noopener noreferrer",children:[p.jsx("i",{className:"fab fa-spotify",style:{color:"#1DB954"}}),p.jsx("span",{children:"Spotify"})]}),p.jsxs(Dl,{href:"https://music.apple.com/us/artist/anu-ash/1784887272",target:"_blank",rel:"noopener noreferrer",children:[p.jsx("i",{className:"fab fa-apple",style:{color:"#fc3c44"}}),p.jsx("span",{children:"Apple Music"})]}),p.jsxs(Dl,{href:"https://music.youtube.com/channel/UCM6ClyrCSXfB_DrtFevJOaQ",target:"_blank",rel:"noopener noreferrer",children:[p.jsx("i",{className:"fab fa-youtube",style:{color:"#FF0000"}}),p.jsx("span",{children:"YouTube"})]})]}),p.jsxs(tj,{children:[p.jsx("h2",{style:{color:"var(--white)",marginBottom:"var(--spacing-md)"},children:"Featured Works"}),p.jsx(nj,{children:e.map(t=>p.jsxs(fv,{whileHover:{y:-5},transition:{duration:.4},children:[p.jsx(rj,{coverImage:t.coverImage}),p.jsxs(ij,{children:[p.jsx(oj,{children:t.title}),p.jsx(sj,{children:t.type}),p.jsx(aj,{children:t.description}),p.jsxs(lj,{children:[t.trackCount," tracks"]}),p.jsx(uj,{children:t.spotify&&p.jsxs(cj,{href:t.spotify,target:"_blank",rel:"noopener noreferrer",color:"#1DB954",style:{width:"100%"},children:[p.jsx("i",{className:"fab fa-spotify"}),"Listen on Spotify"]})})]})]},t.id))})]})]})})},fj=k.div`
+`,fj=()=>{const e=[{id:1,title:"Summer Song",type:"Single",description:"Our latest single captures the essence of warm memories and summer feelings. A beautiful piece that showcases our signature harmonies.",trackCount:1,coverImage:Qb,spotify:"https://open.spotify.com/track/75vsnOGucF4WAnsbOIb33e?si=1BapCY4RSyCahTzG9cmBwg"},{id:2,title:"Anu & Ash at Eddie's Attic (Live)",type:"Album",description:"Our debut live album features original songs performed at the iconic Eddie's Attic venue in Atlanta. Experience the energy and emotion of our live performance through these heartfelt originals.",trackCount:7,coverImage:Yb,spotify:"https://open.spotify.com/album/39gQdVgmqSOhtkskKG3iLR"},{id:3,title:"Covers by Anu & Ash at Eddie's Attic (Live)",type:"EP",description:"Our cover EP showcases our unique interpretations of beloved songs, all performed live at Eddie's Attic.",trackCount:5,coverImage:Zb,spotify:"https://open.spotify.com/album/2hEw69hjqykn9n4FNETv0J"}];return p.jsx(qb,{children:p.jsxs(lt,{children:[p.jsxs(ej,{children:[p.jsx("h1",{children:"Listen to Our Music"}),p.jsx("p",{children:"Experience the sound of Anu & Ash through our albums and EPs"})]}),p.jsxs(tj,{children:[p.jsxs(Dl,{href:"https://open.spotify.com/artist/2noTeVrjCU2I1J882nL2vj",target:"_blank",rel:"noopener noreferrer",children:[p.jsx("i",{className:"fab fa-spotify",style:{color:"#1DB954"}}),p.jsx("span",{children:"Spotify"})]}),p.jsxs(Dl,{href:"https://music.apple.com/us/artist/anu-ash/1784887272",target:"_blank",rel:"noopener noreferrer",children:[p.jsx("i",{className:"fab fa-apple",style:{color:"#fc3c44"}}),p.jsx("span",{children:"Apple Music"})]}),p.jsxs(Dl,{href:"https://music.youtube.com/channel/UCM6ClyrCSXfB_DrtFevJOaQ",target:"_blank",rel:"noopener noreferrer",children:[p.jsx("i",{className:"fab fa-youtube",style:{color:"#FF0000"}}),p.jsx("span",{children:"YouTube"})]})]}),p.jsxs(nj,{children:[p.jsx("h2",{style:{color:"var(--white)",marginBottom:"var(--spacing-md)"},children:"Featured Works"}),p.jsx(rj,{children:e.map(t=>p.jsxs(fv,{whileHover:{y:-5},transition:{duration:.4},children:[p.jsx(ij,{coverImage:t.coverImage}),p.jsxs(oj,{children:[p.jsx(sj,{children:t.title}),p.jsx(aj,{children:t.type}),p.jsx(lj,{children:t.description}),p.jsxs(uj,{children:[t.trackCount," tracks"]}),p.jsx(cj,{children:t.spotify&&p.jsxs(dj,{href:t.spotify,target:"_blank",rel:"noopener noreferrer",color:"#1DB954",style:{width:"100%"},children:[p.jsx("i",{className:"fab fa-spotify"}),"Listen on Spotify"]})})]})]},t.id))})]})]})})},pj=k.div`
   min-height: 100vh;
   background: url(${cv}) center 20% / cover no-repeat fixed;
   position: relative;
@@ -765,7 +765,7 @@ object-assign
     z-index: 2;
     color: var(--white);
   }
-`,pj=k.div`
+`,hj=k.div`
   text-align: center;
   margin-bottom: var(--spacing-xl);
   padding-top: 100px;
@@ -773,9 +773,9 @@ object-assign
   h1 {
     margin-bottom: var(--spacing-sm);
   }
-`,hj=k.section`
+`,mj=k.section`
   margin: var(--spacing-xl) 0 var(--spacing-xxl);
-`,mj=k.h2`
+`,gj=k.h2`
   text-align: center;
   margin-bottom: var(--spacing-xl);
   position: relative;
@@ -792,7 +792,7 @@ object-assign
     height: 3px;
     background-color: var(--secondary);
   }
-`,gj=k.div`
+`,yj=k.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--spacing-xl);
@@ -883,7 +883,7 @@ object-assign
     opacity: 0.9;
     line-height: 1.6;
   }
-`;const yj=k.div`
+`;const vj=k.div`
   text-align: center;
   margin: var(--spacing-xxl) 0;
   padding: var(--spacing-xl);
@@ -901,7 +901,7 @@ object-assign
     opacity: 0.9;
     line-height: 1.6;
   }
-`,vj=()=>p.jsx(fj,{children:p.jsxs(lt,{children:[p.jsxs(pj,{children:[p.jsx("h1",{children:"Follow Us"}),p.jsx("p",{children:"Connect with Anu & Ash across all platforms"})]}),p.jsxs(hj,{children:[p.jsx(mj,{children:"Find Us On"}),p.jsxs(gj,{children:[p.jsxs(vr,{href:"https://instagram.com/anuandash",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:ov,alt:"Instagram"})}),p.jsx(ki,{children:"Instagram"}),p.jsx(Ci,{children:"Follow our journey on Instagram for behind-the-scenes content, show announcements, and glimpses into our creative process."}),p.jsx(me,{small:!0,children:"@anuandash"})]}),p.jsxs(vr,{href:"https://www.youtube.com/channel/UCcBuySXj-zaZsFkPJMIxhig",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:uv,alt:"YouTube"})}),p.jsx(ki,{children:"YouTube"}),p.jsx(Ci,{children:"Watch our performances, music videos, and live sessions. Subscribe to our channel for all our latest video content."}),p.jsx(me,{small:!0,children:"Subscribe"})]}),p.jsxs(vr,{href:"https://open.spotify.com/artist/2noTeVrjCU2I1J882nL2vj",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:lv,alt:"Spotify"})}),p.jsx(ki,{children:"Spotify"}),p.jsx(Ci,{children:"Stream our music, add us to your playlists, and never miss a new release. Follow us on Spotify to stay updated."}),p.jsx(me,{small:!0,children:"Stream"})]}),p.jsxs(vr,{href:"https://music.apple.com/us/artist/anu-ash/1784887272",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:sv,alt:"Apple Music"})}),p.jsx(ki,{children:"Apple Music"}),p.jsx(Ci,{children:"Listen to our full discography on Apple Music and add our songs to your library and playlists."}),p.jsx(me,{small:!0,children:"Listen"})]}),p.jsxs(vr,{href:"https://artists.landr.com/anuash",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:av,alt:"LANDR"})}),p.jsx(ki,{children:"LANDR"}),p.jsx(Ci,{children:"Access our artist page on LANDR to discover our complete profile and explore more of our music."}),p.jsx(me,{small:!0,children:"Visit"})]})]})]}),p.jsxs(yj,{children:[p.jsx("h2",{children:"Stay Connected"}),p.jsx("p",{children:"Join our musical journey and be the first to hear about new releases, upcoming shows, and exclusive content by following us on social media."}),p.jsx(me,{as:"a",href:"mailto:info@anuandash.com",large:!0,children:"Contact Us"})]})]})}),pv="/assets/landing3-154cda0a.jpg",xj="/assets/2016-30910f44.png",wj="/assets/2017-e3fff860.png",Sj="/assets/2019_1-ba5221c8.png",Aj="/assets/2019_2-3077cfff.png",kj="/assets/2020_1-75407561.png",Cj="/assets/2020_2-730ab91d.png",Tj="/assets/2021-f8992260.png",Pj="/assets/2024_1-8abce1fc.png",Ej="/assets/2024_2-14d1e609.png",bj=Iy`
+`,xj=()=>p.jsx(pj,{children:p.jsxs(lt,{children:[p.jsxs(hj,{children:[p.jsx("h1",{children:"Follow Us"}),p.jsx("p",{children:"Connect with Anu & Ash across all platforms"})]}),p.jsxs(mj,{children:[p.jsx(gj,{children:"Find Us On"}),p.jsxs(yj,{children:[p.jsxs(vr,{href:"https://instagram.com/anuandash",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:ov,alt:"Instagram"})}),p.jsx(ki,{children:"Instagram"}),p.jsx(Ci,{children:"Follow our journey on Instagram for behind-the-scenes content, show announcements, and glimpses into our creative process."}),p.jsx(me,{small:!0,children:"@anuandash"})]}),p.jsxs(vr,{href:"https://www.youtube.com/channel/UCcBuySXj-zaZsFkPJMIxhig",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:uv,alt:"YouTube"})}),p.jsx(ki,{children:"YouTube"}),p.jsx(Ci,{children:"Watch our performances, music videos, and live sessions. Subscribe to our channel for all our latest video content."}),p.jsx(me,{small:!0,children:"Subscribe"})]}),p.jsxs(vr,{href:"https://open.spotify.com/artist/2noTeVrjCU2I1J882nL2vj",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:lv,alt:"Spotify"})}),p.jsx(ki,{children:"Spotify"}),p.jsx(Ci,{children:"Stream our music, add us to your playlists, and never miss a new release. Follow us on Spotify to stay updated."}),p.jsx(me,{small:!0,children:"Stream"})]}),p.jsxs(vr,{href:"https://music.apple.com/us/artist/anu-ash/1784887272",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:sv,alt:"Apple Music"})}),p.jsx(ki,{children:"Apple Music"}),p.jsx(Ci,{children:"Listen to our full discography on Apple Music and add our songs to your library and playlists."}),p.jsx(me,{small:!0,children:"Listen"})]}),p.jsxs(vr,{href:"https://artists.landr.com/anuash",target:"_blank",rel:"noopener noreferrer",whileHover:{y:-5},transition:{duration:.3},children:[p.jsx(Ai,{children:p.jsx("img",{src:av,alt:"LANDR"})}),p.jsx(ki,{children:"LANDR"}),p.jsx(Ci,{children:"Access our artist page on LANDR to discover our complete profile and explore more of our music."}),p.jsx(me,{small:!0,children:"Visit"})]})]})]}),p.jsxs(vj,{children:[p.jsx("h2",{children:"Stay Connected"}),p.jsx("p",{children:"Join our musical journey and be the first to hear about new releases, upcoming shows, and exclusive content by following us on social media."}),p.jsx(me,{as:"a",href:"mailto:info@anuandash.com",large:!0,children:"Contact Us"})]})]})}),pv="/assets/landing3-154cda0a.jpg",wj="/assets/2016-30910f44.png",Sj="/assets/2017-e3fff860.png",Aj="/assets/2019_1-ba5221c8.png",kj="/assets/2019_2-3077cfff.png",Cj="/assets/2020_1-75407561.png",Tj="/assets/2020_2-730ab91d.png",Pj="/assets/2021-f8992260.png",Ej="/assets/2024_1-8abce1fc.png",bj="/assets/2024_2-14d1e609.png",jj=Iy`
   header, nav {
     background-color: ${e=>e.isScrolled?"var(--primary)":"white"} !important;
     color: ${e=>e.isScrolled?"var(--white)":"var(--text)"} !important;
@@ -912,7 +912,7 @@ object-assign
     color: ${e=>e.isScrolled?"var(--white)":"var(--text)"} !important;
     transition: color 0.3s ease;
   }
-`,jj=k.div`
+`,Rj=k.div`
   min-height: 100vh;
   background: linear-gradient(135deg, #151c2c 0%, #1f2b45 100%);
   position: relative;
@@ -922,7 +922,7 @@ object-assign
     position: relative;
     color: var(--white);
   }
-`,Rj=k.div`
+`,Lj=k.div`
   text-align: center;
   margin-bottom: var(--spacing-xl);
   padding: 120px 0 80px;
@@ -953,7 +953,7 @@ object-assign
     opacity: 0.9;
     color: #e0e0e0;
   }
-`,Lj=k.h2`
+`,Mj=k.h2`
   position: relative;
   margin-bottom: var(--spacing-xl);
   display: inline-block;
@@ -969,7 +969,7 @@ object-assign
     bottom: -10px;
     left: 0;
   }
-`,Mj=k.section`
+`,Oj=k.section`
   margin: var(--spacing-xl) 0;
   padding: var(--spacing-xl) 0;
   position: relative;
@@ -984,7 +984,7 @@ object-assign
     z-index: -1;
     border-radius: 8px;
   }
-`,Oj=k.div`
+`,Dj=k.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xxl);
@@ -993,7 +993,7 @@ object-assign
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`,Dj=k.div`
+`,Fj=k.div`
   p {
     margin-bottom: var(--spacing-md);
     line-height: 1.8;
@@ -1004,7 +1004,7 @@ object-assign
   @media (max-width: 768px) {
     order: 2;
   }
-`,Fj=k.div`
+`,Ij=k.div`
   height: 500px;
   border-radius: 12px;
   overflow: hidden;
@@ -1034,7 +1034,7 @@ object-assign
     height: 400px;
     order: 1;
   }
-`,Ij=k.section`
+`,_j=k.section`
   margin: var(--spacing-xxl) 0;
   padding: var(--spacing-xl) 0;
   background: linear-gradient(to bottom, rgba(31, 43, 69, 0.5), rgba(21, 28, 44, 0.5));
@@ -1177,7 +1177,7 @@ object-assign
     font-size: 1.1rem;
     color: #e0e0e0;
   }
-`;const _j=k.section`
+`;const Nj=k.section`
   margin: var(--spacing-xxl) 0;
   padding: var(--spacing-xxl) var(--spacing-xl);
   
@@ -1199,7 +1199,7 @@ object-assign
       transform: translateX(-50%);
     }
   }
-`,Nj=k.div`
+`,Vj=k.div`
   position: relative;
   max-width: 800px;
   margin: 0 auto;
@@ -1311,7 +1311,7 @@ object-assign
   margin-bottom: var(--spacing-xs);
   color: var(--white);
   font-size: 1.5rem;
-`,Vj=()=>{const[e,t]=w.useState(!1);return w.useEffect(()=>{const n=()=>{window.scrollY>50?t(!0):t(!1)};return window.addEventListener("scroll",n),n(),()=>{window.removeEventListener("scroll",n)}},[]),p.jsxs(jj,{children:[p.jsx(bj,{isScrolled:e}),p.jsxs(lt,{children:[p.jsxs(Rj,{children:[p.jsx(Le.h1,{initial:{opacity:0,y:-20},animate:{opacity:1,y:0},transition:{duration:.5},children:"About Us"}),p.jsx(Le.p,{initial:{opacity:0},animate:{opacity:1},transition:{duration:.5,delay:.2},children:"The story of Anu & Ash"})]}),p.jsx(Mj,{children:p.jsxs(Oj,{children:[p.jsxs(Dj,{children:[p.jsx(Lj,{children:"Our Story"}),p.jsx("p",{children:"Anu & Ash are an Atlanta-based musical duo composed of vocalist-songwriter Anu and keyboardist-composer Ashwin (Ash). Their partnership began through collaborative music projects and evolved into a harmonious marriage. Together, they blend diverse musical backgrounds to create a unique and captivating sound."}),p.jsx("p",{children:"In December 2024, Anu & Ash released their debut live album, Anu & Ash at Eddie's Attic, capturing the essence of their dynamic performances. Their live shows often feature collaborations with talented artists such as Gurinder Negi on guitar, Amit Narayan on percussion, and King Ai on cello, adding depth and richness to their musical presentations."}),p.jsx("p",{children:"Anu & Ash continue to enchant audiences with their fusion of musical styles, heartfelt performances, and collaborative spirit."})]}),p.jsx(Le.div,{initial:{opacity:0,x:50},animate:{opacity:1,x:0},transition:{duration:.8},children:p.jsx(Fj,{})})]})}),p.jsxs(Ij,{children:[p.jsx("h2",{children:"Meet the Artists"}),p.jsx(Le.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.6},viewport:{once:!0},children:p.jsx(Ch,{children:p.jsxs(Th,{children:[p.jsx("h3",{children:"Anu"}),p.jsx("p",{children:"Anu brings over two decades of operatic and musical theater training. She has earned accolades such as National Champion for the Schmidt Foundation of Classical Arts, Indian Raga Fellow, Governor's Honors for Vocal Performance, and Atlanta's 2013 Indian Idol. Her performances span contemporary pop, classical, R&B, Bollywood, and multiple languages. A highlight of her career includes portraying Princess Jasmine in a rendition of Aladdin at Disney Springs in Orlando."})]})})}),p.jsx(Le.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.6,delay:.2},viewport:{once:!0},children:p.jsx(Ch,{children:p.jsxs(Th,{children:[p.jsx("h3",{children:"Ashwin"}),p.jsx("p",{children:`Ashwin's musical journey started in his youth with classical piano and violin, deeply rooted in Indian classical music. He holds an Indian Raga fellowship, leads his own music school—Studio!—and serves as the lead keyboardist for various local bands. His original works include the instrumental mixtape "Elements." Notably, he appeared as the keyboardist for the fictional band Brown Jovi in Episode 3 of Disney's Ms. Marvel.`})]})})})]}),p.jsxs(_j,{children:[p.jsx("h2",{children:"Musical Milestones"}),p.jsxs(Nj,{children:[p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2016"}),p.jsx(Bn,{children:"First Collaboration"}),p.jsx(_t,{children:p.jsx("img",{src:xj,alt:"Anu & Ashwin's first collaboration"})}),p.jsx("p",{children:'Anu & Ashwin met to collaborate on their first project together, a Bollywood mashup of "Pareshaan" and "Fitoor".'})]})}),p.jsx(Vn,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2017"}),p.jsx(Bn,{children:"Music Sparked Romance"}),p.jsx(_t,{children:p.jsx("img",{src:wj,alt:"Anu & Ashwin's romance begins"})}),p.jsx("p",{children:"Their love for music turned into love for each other."})]})}),p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2019"}),p.jsx(Bn,{children:"Wedding & Official Formation"}),p.jsxs(Fl,{children:[p.jsx(_t,{children:p.jsx("img",{src:Sj,alt:"Anu & Ashwin's wedding"})}),p.jsx(_t,{children:p.jsx("img",{src:Aj,alt:"Anu & Ashwin's wedding celebration"})})]}),p.jsx("p",{children:"Their wedding marked the beginning of Anu & Ash as both a married couple and musical duo."})]})}),p.jsx(Vn,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2020"}),p.jsx(Bn,{children:"Viral Success"}),p.jsxs(Fl,{children:[p.jsx(_t,{children:p.jsx("img",{src:kj,alt:"Anu & Ashwin's wedding"})}),p.jsx(_t,{children:p.jsx("img",{src:Cj,alt:"Anu & Ashwin's wedding celebration"})})]}),p.jsx("p",{children:"Anu & Ash gained popularity through viral TikTok videos, reaching new audiences with their music."})]})}),p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2021"}),p.jsx(Bn,{children:"Opening for Vidya Vox"}),p.jsx(_t,{children:p.jsx("img",{src:Tj,alt:"Anu & Ash opening for Vidya Vox"})}),p.jsx("p",{children:"Anu & Ash opened for renowned artist Vidya Vox in Atlanta!"})]})}),p.jsx(Vn,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2024"}),p.jsx(Bn,{children:"First Concert & Debut Album"}),p.jsxs(Fl,{children:[p.jsx(_t,{children:p.jsx("img",{src:Pj,alt:"Anu & Ash at Eddie's Attic concert"})}),p.jsx(_t,{children:p.jsx("img",{src:Ej,alt:"Anu & Ash with their band"})})]}),p.jsx("p",{children:"Anu & Ash had their first ever concert (sold-out!!) at Eddie's Attic with their awesome band, featuring Gurinder, King, and Amit. They released a debut album of their live songs from the concert. They received the official verified status (yes, the blue checkmark!) on all streaming services, including Spotify and Apple Music. "})]})}),p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2025"}),p.jsx(Bn,{children:"Looking Ahead"}),p.jsx("p",{children:"Studio versions of original songs are in progress, and the next big concert is set for August! In the meantime, catch Anu & Ash performing at open mic nights, live venues, and music festivals."})]})})]})]})]})]})};class Ro{constructor(t=0,n="Network Error"){this.status=t,this.text=n}}const zj=()=>{if(!(typeof localStorage>"u"))return{get:e=>Promise.resolve(localStorage.getItem(e)),set:(e,t)=>Promise.resolve(localStorage.setItem(e,t)),remove:e=>Promise.resolve(localStorage.removeItem(e))}},Ae={origin:"https://api.emailjs.com",blockHeadless:!1,storageProvider:zj()},Id=e=>e?typeof e=="string"?{publicKey:e}:e.toString()==="[object Object]"?e:{}:{},$j=(e,t="https://api.emailjs.com")=>{if(!e)return;const n=Id(e);Ae.publicKey=n.publicKey,Ae.blockHeadless=n.blockHeadless,Ae.storageProvider=n.storageProvider,Ae.blockList=n.blockList,Ae.limitRate=n.limitRate,Ae.origin=n.origin||t},hv=async(e,t,n={})=>{const r=await fetch(Ae.origin+e,{method:"POST",headers:n,body:t}),i=await r.text(),o=new Ro(r.status,i);if(r.ok)return o;throw o},mv=(e,t,n)=>{if(!e||typeof e!="string")throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!t||typeof t!="string")throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!n||typeof n!="string")throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates"},Bj=e=>{if(e&&e.toString()!=="[object Object]")throw"The template params have to be the object. Visit https://www.emailjs.com/docs/sdk/send/"},gv=e=>e.webdriver||!e.languages||e.languages.length===0,yv=()=>new Ro(451,"Unavailable For Headless Browser"),Uj=(e,t)=>{if(!Array.isArray(e))throw"The BlockList list has to be an array";if(typeof t!="string")throw"The BlockList watchVariable has to be a string"},Hj=e=>{var t;return!((t=e.list)!=null&&t.length)||!e.watchVariable},Wj=(e,t)=>e instanceof FormData?e.get(t):e[t],vv=(e,t)=>{if(Hj(e))return!1;Uj(e.list,e.watchVariable);const n=Wj(t,e.watchVariable);return typeof n!="string"?!1:e.list.includes(n)},xv=()=>new Ro(403,"Forbidden"),Xj=(e,t)=>{if(typeof e!="number"||e<0)throw"The LimitRate throttle has to be a positive number";if(t&&typeof t!="string")throw"The LimitRate ID has to be a non-empty string"},Gj=async(e,t,n)=>{const r=Number(await n.get(e)||0);return t-Date.now()+r},wv=async(e,t,n)=>{if(!t.throttle||!n)return!1;Xj(t.throttle,t.id);const r=t.id||e;return await Gj(r,t.throttle,n)>0?!0:(await n.set(r,Date.now().toString()),!1)},Sv=()=>new Ro(429,"Too Many Requests"),Jj=async(e,t,n,r)=>{const i=Id(r),o=i.publicKey||Ae.publicKey,s=i.blockHeadless||Ae.blockHeadless,a=i.storageProvider||Ae.storageProvider,l={...Ae.blockList,...i.blockList},u={...Ae.limitRate,...i.limitRate};return s&&gv(navigator)?Promise.reject(yv()):(mv(o,e,t),Bj(n),n&&vv(l,n)?Promise.reject(xv()):await wv(location.pathname,u,a)?Promise.reject(Sv()):hv("/api/v1.0/email/send",JSON.stringify({lib_version:"4.4.1",user_id:o,service_id:e,template_id:t,template_params:n}),{"Content-type":"application/json"}))},Kj=e=>{if(!e||e.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of the form"},Yj=e=>typeof e=="string"?document.querySelector(e):e,Zj=async(e,t,n,r)=>{const i=Id(r),o=i.publicKey||Ae.publicKey,s=i.blockHeadless||Ae.blockHeadless,a=Ae.storageProvider||i.storageProvider,l={...Ae.blockList,...i.blockList},u={...Ae.limitRate,...i.limitRate};if(s&&gv(navigator))return Promise.reject(yv());const c=Yj(n);mv(o,e,t),Kj(c);const d=new FormData(c);return vv(l,d)?Promise.reject(xv()):await wv(location.pathname,u,a)?Promise.reject(Sv()):(d.append("lib_version","4.4.1"),d.append("service_id",e),d.append("template_id",t),d.append("user_id",o),hv("/api/v1.0/email/send-form",d))},Qj={init:$j,send:Jj,sendForm:Zj,EmailJSResponseStatus:Ro},qj="/assets/email-abe88208.png",e2="/assets/location-5f4978c3.png",t2="data:image/png;base64,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",n2=k.div`
+`,zj=()=>{const[e,t]=w.useState(!1);return w.useEffect(()=>{const n=()=>{window.scrollY>50?t(!0):t(!1)};return window.addEventListener("scroll",n),n(),()=>{window.removeEventListener("scroll",n)}},[]),p.jsxs(Rj,{children:[p.jsx(jj,{isScrolled:e}),p.jsxs(lt,{children:[p.jsxs(Lj,{children:[p.jsx(Le.h1,{initial:{opacity:0,y:-20},animate:{opacity:1,y:0},transition:{duration:.5},children:"About Us"}),p.jsx(Le.p,{initial:{opacity:0},animate:{opacity:1},transition:{duration:.5,delay:.2},children:"The story of Anu & Ash"})]}),p.jsx(Oj,{children:p.jsxs(Dj,{children:[p.jsxs(Fj,{children:[p.jsx(Mj,{children:"Our Story"}),p.jsx("p",{children:"Anu & Ash are an Atlanta-based musical duo composed of vocalist-songwriter Anu and keyboardist-composer Ashwin (Ash). Their partnership began through collaborative music projects and evolved into a harmonious marriage. Together, they blend diverse musical backgrounds to create a unique and captivating sound."}),p.jsx("p",{children:"In December 2024, Anu & Ash released their debut live album, Anu & Ash at Eddie's Attic, capturing the essence of their dynamic performances. Their live shows often feature collaborations with talented artists such as Gurinder Negi on guitar, Amit Narayan on percussion, and King Ai on cello, adding depth and richness to their musical presentations."}),p.jsx("p",{children:"Anu & Ash continue to enchant audiences with their fusion of musical styles, heartfelt performances, and collaborative spirit."})]}),p.jsx(Le.div,{initial:{opacity:0,x:50},animate:{opacity:1,x:0},transition:{duration:.8},children:p.jsx(Ij,{})})]})}),p.jsxs(_j,{children:[p.jsx("h2",{children:"Meet the Artists"}),p.jsx(Le.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.6},viewport:{once:!0},children:p.jsx(Ch,{children:p.jsxs(Th,{children:[p.jsx("h3",{children:"Anu"}),p.jsx("p",{children:"Anu brings over two decades of operatic and musical theater training. She has earned accolades such as National Champion for the Schmidt Foundation of Classical Arts, Indian Raga Fellow, Governor's Honors for Vocal Performance, and Atlanta's 2013 Indian Idol. Her performances span contemporary pop, classical, R&B, Bollywood, and multiple languages. A highlight of her career includes portraying Princess Jasmine in a rendition of Aladdin at Disney Springs in Orlando."})]})})}),p.jsx(Le.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.6,delay:.2},viewport:{once:!0},children:p.jsx(Ch,{children:p.jsxs(Th,{children:[p.jsx("h3",{children:"Ashwin"}),p.jsx("p",{children:`Ashwin's musical journey started in his youth with classical piano and violin, deeply rooted in Indian classical music. He holds an Indian Raga fellowship, leads his own music school—Studio!—and serves as the lead keyboardist for various local bands. His original works include the instrumental mixtape "Elements." Notably, he appeared as the keyboardist for the fictional band Brown Jovi in Episode 3 of Disney's Ms. Marvel.`})]})})})]}),p.jsxs(Nj,{children:[p.jsx("h2",{children:"Musical Milestones"}),p.jsxs(Vj,{children:[p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2016"}),p.jsx(Bn,{children:"First Collaboration"}),p.jsx(_t,{children:p.jsx("img",{src:wj,alt:"Anu & Ashwin's first collaboration"})}),p.jsx("p",{children:'Anu & Ashwin met to collaborate on their first project together, a Bollywood mashup of "Pareshaan" and "Fitoor".'})]})}),p.jsx(Vn,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2017"}),p.jsx(Bn,{children:"Music Sparked Romance"}),p.jsx(_t,{children:p.jsx("img",{src:Sj,alt:"Anu & Ashwin's romance begins"})}),p.jsx("p",{children:"Their love for music turned into love for each other."})]})}),p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2019"}),p.jsx(Bn,{children:"Wedding & Official Formation"}),p.jsxs(Fl,{children:[p.jsx(_t,{children:p.jsx("img",{src:Aj,alt:"Anu & Ashwin's wedding"})}),p.jsx(_t,{children:p.jsx("img",{src:kj,alt:"Anu & Ashwin's wedding celebration"})})]}),p.jsx("p",{children:"Their wedding marked the beginning of Anu & Ash as both a married couple and musical duo."})]})}),p.jsx(Vn,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2020"}),p.jsx(Bn,{children:"Viral Success"}),p.jsxs(Fl,{children:[p.jsx(_t,{children:p.jsx("img",{src:Cj,alt:"Anu & Ashwin's wedding"})}),p.jsx(_t,{children:p.jsx("img",{src:Tj,alt:"Anu & Ashwin's wedding celebration"})})]}),p.jsx("p",{children:"Anu & Ash gained popularity through viral TikTok videos, reaching new audiences with their music."})]})}),p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2021"}),p.jsx(Bn,{children:"Opening for Vidya Vox"}),p.jsx(_t,{children:p.jsx("img",{src:Pj,alt:"Anu & Ash opening for Vidya Vox"})}),p.jsx("p",{children:"Anu & Ash opened for renowned artist Vidya Vox in Atlanta!"})]})}),p.jsx(Vn,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2024"}),p.jsx(Bn,{children:"First Concert & Debut Album"}),p.jsxs(Fl,{children:[p.jsx(_t,{children:p.jsx("img",{src:Ej,alt:"Anu & Ash at Eddie's Attic concert"})}),p.jsx(_t,{children:p.jsx("img",{src:bj,alt:"Anu & Ash with their band"})})]}),p.jsx("p",{children:"Anu & Ash had their first ever concert (sold-out!!) at Eddie's Attic with their awesome band, featuring Gurinder, King, and Amit. They released a debut album of their live songs from the concert. They received the official verified status (yes, the blue checkmark!) on all streaming services, including Spotify and Apple Music. "})]})}),p.jsx(Vn,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},transition:{duration:.5},viewport:{once:!0},children:p.jsxs(zn,{children:[p.jsx($n,{children:"2025"}),p.jsx(Bn,{children:"Looking Ahead"}),p.jsx("p",{children:"Studio versions of original songs are in progress, and the next big concert is set for August! In the meantime, catch Anu & Ash performing at open mic nights, live venues, and music festivals."})]})})]})]})]})]})};class Ro{constructor(t=0,n="Network Error"){this.status=t,this.text=n}}const $j=()=>{if(!(typeof localStorage>"u"))return{get:e=>Promise.resolve(localStorage.getItem(e)),set:(e,t)=>Promise.resolve(localStorage.setItem(e,t)),remove:e=>Promise.resolve(localStorage.removeItem(e))}},Ae={origin:"https://api.emailjs.com",blockHeadless:!1,storageProvider:$j()},Id=e=>e?typeof e=="string"?{publicKey:e}:e.toString()==="[object Object]"?e:{}:{},Bj=(e,t="https://api.emailjs.com")=>{if(!e)return;const n=Id(e);Ae.publicKey=n.publicKey,Ae.blockHeadless=n.blockHeadless,Ae.storageProvider=n.storageProvider,Ae.blockList=n.blockList,Ae.limitRate=n.limitRate,Ae.origin=n.origin||t},hv=async(e,t,n={})=>{const r=await fetch(Ae.origin+e,{method:"POST",headers:n,body:t}),i=await r.text(),o=new Ro(r.status,i);if(r.ok)return o;throw o},mv=(e,t,n)=>{if(!e||typeof e!="string")throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!t||typeof t!="string")throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!n||typeof n!="string")throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates"},Uj=e=>{if(e&&e.toString()!=="[object Object]")throw"The template params have to be the object. Visit https://www.emailjs.com/docs/sdk/send/"},gv=e=>e.webdriver||!e.languages||e.languages.length===0,yv=()=>new Ro(451,"Unavailable For Headless Browser"),Hj=(e,t)=>{if(!Array.isArray(e))throw"The BlockList list has to be an array";if(typeof t!="string")throw"The BlockList watchVariable has to be a string"},Wj=e=>{var t;return!((t=e.list)!=null&&t.length)||!e.watchVariable},Xj=(e,t)=>e instanceof FormData?e.get(t):e[t],vv=(e,t)=>{if(Wj(e))return!1;Hj(e.list,e.watchVariable);const n=Xj(t,e.watchVariable);return typeof n!="string"?!1:e.list.includes(n)},xv=()=>new Ro(403,"Forbidden"),Gj=(e,t)=>{if(typeof e!="number"||e<0)throw"The LimitRate throttle has to be a positive number";if(t&&typeof t!="string")throw"The LimitRate ID has to be a non-empty string"},Jj=async(e,t,n)=>{const r=Number(await n.get(e)||0);return t-Date.now()+r},wv=async(e,t,n)=>{if(!t.throttle||!n)return!1;Gj(t.throttle,t.id);const r=t.id||e;return await Jj(r,t.throttle,n)>0?!0:(await n.set(r,Date.now().toString()),!1)},Sv=()=>new Ro(429,"Too Many Requests"),Kj=async(e,t,n,r)=>{const i=Id(r),o=i.publicKey||Ae.publicKey,s=i.blockHeadless||Ae.blockHeadless,a=i.storageProvider||Ae.storageProvider,l={...Ae.blockList,...i.blockList},u={...Ae.limitRate,...i.limitRate};return s&&gv(navigator)?Promise.reject(yv()):(mv(o,e,t),Uj(n),n&&vv(l,n)?Promise.reject(xv()):await wv(location.pathname,u,a)?Promise.reject(Sv()):hv("/api/v1.0/email/send",JSON.stringify({lib_version:"4.4.1",user_id:o,service_id:e,template_id:t,template_params:n}),{"Content-type":"application/json"}))},Yj=e=>{if(!e||e.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of the form"},Zj=e=>typeof e=="string"?document.querySelector(e):e,Qj=async(e,t,n,r)=>{const i=Id(r),o=i.publicKey||Ae.publicKey,s=i.blockHeadless||Ae.blockHeadless,a=Ae.storageProvider||i.storageProvider,l={...Ae.blockList,...i.blockList},u={...Ae.limitRate,...i.limitRate};if(s&&gv(navigator))return Promise.reject(yv());const c=Zj(n);mv(o,e,t),Yj(c);const d=new FormData(c);return vv(l,d)?Promise.reject(xv()):await wv(location.pathname,u,a)?Promise.reject(Sv()):(d.append("lib_version","4.4.1"),d.append("service_id",e),d.append("template_id",t),d.append("user_id",o),hv("/api/v1.0/email/send-form",d))},qj={init:Bj,send:Kj,sendForm:Qj,EmailJSResponseStatus:Ro},e2="/assets/email-abe88208.png",t2="/assets/location-5f4978c3.png",n2="data:image/png;base64,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",r2=k.div`
   text-align: center;
   margin-bottom: var(--spacing-xl);
   padding-top: 100px;
@@ -1319,7 +1319,7 @@ object-assign
   h1 {
     margin-bottom: var(--spacing-sm);
   }
-`,r2=k.div`
+`,i2=k.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xl);
@@ -1329,7 +1329,7 @@ object-assign
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
-`,i2=k.div`
+`,o2=k.div`
   h2 {
     margin-bottom: var(--spacing-md);
   }
@@ -1337,7 +1337,7 @@ object-assign
   p {
     margin-bottom: var(--spacing-md);
   }
-`,o2=k.div`
+`,s2=k.div`
   margin-top: var(--spacing-lg);
 `,Il=k.div`
   display: flex;
@@ -1374,12 +1374,12 @@ object-assign
       color: var(--secondary);
     }
   }
-`,s2=k.form`
+`,a2=k.form`
   background-color: var(--white);
   padding: var(--spacing-lg);
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-`,a2=k.h3`
+`,l2=k.h3`
   margin-bottom: var(--spacing-md);
   text-align: center;
 `,Vl=k.div`
@@ -1402,7 +1402,7 @@ object-assign
     outline: none;
     border-color: var(--secondary);
   }
-`,l2=k.textarea`
+`,u2=k.textarea`
   width: 100%;
   padding: 0.8rem 1rem;
   border: 1px solid #ddd;
@@ -1432,9 +1432,9 @@ object-assign
   cursor: pointer;
 `;k.label`
   cursor: pointer;
-`;const u2=k(me)`
+`;const c2=k(me)`
   width: 100%;
-`,c2=k(Le.div)`
+`,d2=k(Le.div)`
   text-align: center;
   padding: var(--spacing-lg);
   background-color: #e6f7e8;
@@ -1445,7 +1445,7 @@ object-assign
     margin-bottom: var(--spacing-sm);
     color: #2e7d32;
   }
-`,d2=k(Le.div)`
+`,f2=k(Le.div)`
   text-align: center;
   padding: var(--spacing-lg);
   background-color: #fee8e8;
@@ -1456,7 +1456,7 @@ object-assign
     margin-bottom: var(--spacing-sm);
     color: #d32f2f;
   }
-`,f2=k(Le.div)`
+`,p2=k(Le.div)`
   position: absolute;
   top: 0;
   left: 0;
@@ -1468,7 +1468,7 @@ object-assign
   align-items: center;
   border-radius: 8px;
   z-index: 10;
-`,p2=()=>{const[e,t]=w.useState({name:"",email:"",message:""}),[n,r]=w.useState({submitted:!1,loading:!1,error:null}),i=w.useRef(),o=l=>{const{name:u,value:c}=l.target;t({...e,[u]:c})},s=l=>{l.preventDefault(),r({submitted:!1,loading:!0,error:null});const u="service_om7exik",c="template_zcuybgn",d="irYIZGqJ2Fzw7yeSQ";Qj.sendForm(u,c,i.current,d).then(f=>{console.log("Email sent successfully:",f.text),r({submitted:!0,loading:!1,error:null})}).catch(f=>{console.error("Failed to send email:",f.text),r({submitted:!1,loading:!1,error:f.text})})},a=()=>{t({name:"",email:"",message:""}),r({submitted:!1,loading:!1,error:null})};return p.jsxs(lt,{children:[p.jsxs(n2,{children:[p.jsx("h1",{children:"Contact Us"}),p.jsx("p",{children:"Get in touch with Anu & Ash for bookings, collaborations, or just to say hello!"})]}),p.jsxs(r2,{children:[p.jsxs(i2,{children:[p.jsx("h2",{children:"Let's Connect"}),p.jsx("p",{children:"We'd love to hear from you! Whether you're interested in booking us for a show, collaborating on a project, or just want to share your thoughts about our music, we're here to listen."}),p.jsx("p",{children:"Fill out the form and we'll get back to you as soon as possible. You can also reach out to us directly using the contact information below."}),p.jsxs(o2,{children:[p.jsxs(Il,{children:[p.jsx(_l,{children:p.jsx("img",{src:qj,alt:"Email"})}),p.jsxs(Nl,{children:[p.jsx("h4",{children:"Email"}),p.jsx("a",{href:"mailto:anuandash.music@gmail.com",children:"anuandash.music@gmail.com"})]})]}),p.jsxs(Il,{children:[p.jsx(_l,{children:p.jsx("img",{src:e2,alt:"Location"})}),p.jsxs(Nl,{children:[p.jsx("h4",{children:"Location"}),p.jsx("p",{children:"Atlanta, GA"})]})]}),p.jsxs(Il,{children:[p.jsx(_l,{children:p.jsx("img",{src:t2,alt:"Bookings"})}),p.jsxs(Nl,{children:[p.jsx("h4",{children:"Bookings"}),p.jsx("p",{children:"Contact us directly for booking inquiries"})]})]})]})]}),p.jsx("div",{children:n.submitted?p.jsxs(c2,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.5},children:[p.jsx("h3",{children:"Thank You!"}),p.jsx("p",{children:"Your message has been sent successfully. We'll get back to you as soon as possible."}),p.jsx(me,{onClick:a,style:{marginTop:"1rem"},children:"Send Another Message"})]}):n.error?p.jsxs(d2,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.5},children:[p.jsx("h3",{children:"Oops! Something went wrong"}),p.jsx("p",{children:"We couldn't send your message. Please try again or email us directly."}),p.jsx(me,{onClick:a,style:{marginTop:"1rem"},children:"Try Again"})]}):p.jsxs("div",{style:{position:"relative"},children:[n.loading&&p.jsx(f2,{initial:{opacity:0},animate:{opacity:1},children:p.jsx("p",{children:"Sending message..."})}),p.jsxs(s2,{ref:i,onSubmit:s,children:[p.jsx(a2,{children:"Send Us a Message"}),p.jsxs(Vl,{children:[p.jsx(zl,{htmlFor:"name",children:"Your Name *"}),p.jsx(Ph,{type:"text",id:"name",name:"name",value:e.name,onChange:o,required:!0})]}),p.jsxs(Vl,{children:[p.jsx(zl,{htmlFor:"email",children:"Email Address *"}),p.jsx(Ph,{type:"email",id:"email",name:"email",value:e.email,onChange:o,required:!0})]}),p.jsxs(Vl,{children:[p.jsx(zl,{htmlFor:"message",children:"Your Message *"}),p.jsx(l2,{id:"message",name:"message",value:e.message,onChange:o,required:!0})]}),p.jsx("input",{type:"hidden",name:"to_email",value:"anuandash.music@gmail.com"}),p.jsx(u2,{type:"submit",disabled:n.loading,children:n.loading?"Sending...":"Send Message"})]})]})})]})]})},h2="7exyww-8t.myshopify.com",m2="1bdf6bfc41990461dc9fa185e93d7079",g2=()=>new Promise(e=>{if(window.ShopifyBuy&&window.ShopifyBuy.UI){e();return}const t=document.createElement("script");t.async=!0,t.src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js",t.onload=e,document.head.appendChild(t)}),Eh=({productId:e,nodeId:t})=>(w.useEffect(()=>{let n=!0;return g2().then(()=>{if(!n||!window.ShopifyBuy||!window.ShopifyBuy.UI)return;const r=window.ShopifyBuy.buildClient({domain:h2,storefrontAccessToken:m2});window.ShopifyBuy.UI.onReady(r).then(function(i){i.createComponent("product",{id:e,node:document.getElementById(t),moneyFormat:"%24%7B%7Bamount%7D%7D",options:{product:{styles:{product:{"@media (min-width: 601px)":{"max-width":"100% !important","margin-left":"0 !important","margin-bottom":"50px !important"},"text-align":"left !important"},title:{"font-size":"24px !important","font-weight":"bold !important","margin-bottom":"10px !important"},button:{":hover":{"background-color":"#c13b47 !important"},"background-color":"#d6424f !important",":focus":{"background-color":"#c13b47 !important"},color:"#fff !important",border:"none !important","border-radius":"4px !important",padding:"12px 24px !important","font-weight":"600 !important"},price:{"font-size":"18px !important","font-weight":"bold !important","margin-bottom":"10px !important"},compareAt:{"font-size":"15px !important"},unitPrice:{"font-size":"15px !important"},description:{"margin-bottom":"15px !important"}},layout:"horizontal",contents:{img:!1,imgWithCarousel:!0,description:!0},width:"100%",text:{button:"Add to cart"}},cart:{styles:{button:{":hover":{"background-color":"#c13b47 !important"},"background-color":"#d6424f !important",":focus":{"background-color":"#c13b47 !important"},color:"#fff !important"}},text:{total:"Subtotal",button:"Checkout"},popup:!1},toggle:{styles:{toggle:{"background-color":"#d6424f !important",":hover":{"background-color":"#c13b47 !important"},":focus":{"background-color":"#c13b47 !important"},color:"#fff !important"}}}}})})}),()=>{n=!1}},[e,t]),p.jsx("div",{id:t})),y2=k.div`
+`,h2=()=>{const[e,t]=w.useState({name:"",email:"",message:""}),[n,r]=w.useState({submitted:!1,loading:!1,error:null}),i=w.useRef(),o=l=>{const{name:u,value:c}=l.target;t({...e,[u]:c})},s=l=>{l.preventDefault(),r({submitted:!1,loading:!0,error:null});const u="service_om7exik",c="template_zcuybgn",d="irYIZGqJ2Fzw7yeSQ";qj.sendForm(u,c,i.current,d).then(f=>{console.log("Email sent successfully:",f.text),r({submitted:!0,loading:!1,error:null})}).catch(f=>{console.error("Failed to send email:",f.text),r({submitted:!1,loading:!1,error:f.text})})},a=()=>{t({name:"",email:"",message:""}),r({submitted:!1,loading:!1,error:null})};return p.jsxs(lt,{children:[p.jsxs(r2,{children:[p.jsx("h1",{children:"Contact Us"}),p.jsx("p",{children:"Get in touch with Anu & Ash for bookings, collaborations, or just to say hello!"})]}),p.jsxs(i2,{children:[p.jsxs(o2,{children:[p.jsx("h2",{children:"Let's Connect"}),p.jsx("p",{children:"We'd love to hear from you! Whether you're interested in booking us for a show, collaborating on a project, or just want to share your thoughts about our music, we're here to listen."}),p.jsx("p",{children:"Fill out the form and we'll get back to you as soon as possible. You can also reach out to us directly using the contact information below."}),p.jsxs(s2,{children:[p.jsxs(Il,{children:[p.jsx(_l,{children:p.jsx("img",{src:e2,alt:"Email"})}),p.jsxs(Nl,{children:[p.jsx("h4",{children:"Email"}),p.jsx("a",{href:"mailto:anuandash.music@gmail.com",children:"anuandash.music@gmail.com"})]})]}),p.jsxs(Il,{children:[p.jsx(_l,{children:p.jsx("img",{src:t2,alt:"Location"})}),p.jsxs(Nl,{children:[p.jsx("h4",{children:"Location"}),p.jsx("p",{children:"Atlanta, GA"})]})]}),p.jsxs(Il,{children:[p.jsx(_l,{children:p.jsx("img",{src:n2,alt:"Bookings"})}),p.jsxs(Nl,{children:[p.jsx("h4",{children:"Bookings"}),p.jsx("p",{children:"Contact us directly for booking inquiries"})]})]})]})]}),p.jsx("div",{children:n.submitted?p.jsxs(d2,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.5},children:[p.jsx("h3",{children:"Thank You!"}),p.jsx("p",{children:"Your message has been sent successfully. We'll get back to you as soon as possible."}),p.jsx(me,{onClick:a,style:{marginTop:"1rem"},children:"Send Another Message"})]}):n.error?p.jsxs(f2,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.5},children:[p.jsx("h3",{children:"Oops! Something went wrong"}),p.jsx("p",{children:"We couldn't send your message. Please try again or email us directly."}),p.jsx(me,{onClick:a,style:{marginTop:"1rem"},children:"Try Again"})]}):p.jsxs("div",{style:{position:"relative"},children:[n.loading&&p.jsx(p2,{initial:{opacity:0},animate:{opacity:1},children:p.jsx("p",{children:"Sending message..."})}),p.jsxs(a2,{ref:i,onSubmit:s,children:[p.jsx(l2,{children:"Send Us a Message"}),p.jsxs(Vl,{children:[p.jsx(zl,{htmlFor:"name",children:"Your Name *"}),p.jsx(Ph,{type:"text",id:"name",name:"name",value:e.name,onChange:o,required:!0})]}),p.jsxs(Vl,{children:[p.jsx(zl,{htmlFor:"email",children:"Email Address *"}),p.jsx(Ph,{type:"email",id:"email",name:"email",value:e.email,onChange:o,required:!0})]}),p.jsxs(Vl,{children:[p.jsx(zl,{htmlFor:"message",children:"Your Message *"}),p.jsx(u2,{id:"message",name:"message",value:e.message,onChange:o,required:!0})]}),p.jsx("input",{type:"hidden",name:"to_email",value:"anuandash.music@gmail.com"}),p.jsx(c2,{type:"submit",disabled:n.loading,children:n.loading?"Sending...":"Send Message"})]})]})})]})]})},m2="7exyww-8t.myshopify.com",g2="1bdf6bfc41990461dc9fa185e93d7079",y2=()=>new Promise(e=>{if(window.ShopifyBuy&&window.ShopifyBuy.UI){e();return}const t=document.createElement("script");t.async=!0,t.src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js",t.onload=e,document.head.appendChild(t)}),Eh=({productId:e,nodeId:t})=>(w.useEffect(()=>{let n=!0;return y2().then(()=>{if(!n||!window.ShopifyBuy||!window.ShopifyBuy.UI)return;const r=window.ShopifyBuy.buildClient({domain:m2,storefrontAccessToken:g2});window.ShopifyBuy.UI.onReady(r).then(function(i){i.createComponent("product",{id:e,node:document.getElementById(t),moneyFormat:"%24%7B%7Bamount%7D%7D",options:{product:{styles:{product:{"@media (min-width: 601px)":{"max-width":"100% !important","margin-left":"0 !important","margin-bottom":"50px !important"},"text-align":"left !important"},title:{"font-size":"24px !important","font-weight":"bold !important","margin-bottom":"10px !important"},button:{":hover":{"background-color":"#c13b47 !important"},"background-color":"#d6424f !important",":focus":{"background-color":"#c13b47 !important"},color:"#fff !important",border:"none !important","border-radius":"4px !important",padding:"12px 24px !important","font-weight":"600 !important"},price:{"font-size":"18px !important","font-weight":"bold !important","margin-bottom":"10px !important"},compareAt:{"font-size":"15px !important"},unitPrice:{"font-size":"15px !important"},description:{"margin-bottom":"15px !important"}},layout:"horizontal",contents:{img:!1,imgWithCarousel:!0,description:!0},width:"100%",text:{button:"Add to cart"}},cart:{styles:{button:{":hover":{"background-color":"#c13b47 !important"},"background-color":"#d6424f !important",":focus":{"background-color":"#c13b47 !important"},color:"#fff !important"}},text:{total:"Subtotal",button:"Checkout"},popup:!1},toggle:{styles:{toggle:{"background-color":"#d6424f !important",":hover":{"background-color":"#c13b47 !important"},":focus":{"background-color":"#c13b47 !important"},color:"#fff !important"}}}}})})}),()=>{n=!1}},[e,t]),p.jsx("div",{id:t})),v2=k.div`
   min-height: 100vh;
   background: url(${dv}) center 20% / cover no-repeat fixed;
   position: relative;
@@ -1489,7 +1489,7 @@ object-assign
     z-index: 2;
     color: var(--white);
   }
-`,v2=k.div`
+`,x2=k.div`
   text-align: center;
   margin-bottom: var(--spacing-xl);
   padding-top: 100px;
@@ -1497,7 +1497,7 @@ object-assign
   h1 {
     margin-bottom: var(--spacing-sm);
   }
-`,x2=k.div`
+`,w2=k.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: calc(var(--spacing-xl) * 2);
@@ -1550,7 +1550,7 @@ object-assign
   font-weight: 600;
   border-radius: 50px;
   margin-bottom: var(--spacing-xs);
-`;const w2=()=>p.jsx(y2,{children:p.jsxs(lt,{children:[p.jsxs(v2,{children:[p.jsx("h1",{children:"Official Merchandise"}),p.jsx("p",{children:"Show your support with our official merchandise. Wear your favorite music!"})]}),p.jsxs(x2,{children:[p.jsx(bh,{children:p.jsx(Eh,{productId:"7488612368461",nodeId:"product-component-1748583864650"})}),p.jsx(bh,{children:p.jsx(Eh,{productId:"7488882901069",nodeId:"product-component-1748583919176"})})]})]})}),S2=k.div`
+`;const S2=()=>p.jsx(v2,{children:p.jsxs(lt,{children:[p.jsxs(x2,{children:[p.jsx("h1",{children:"Official Merchandise"}),p.jsx("p",{children:"Show your support with our official merchandise. Wear your favorite music!"})]}),p.jsxs(w2,{children:[p.jsx(bh,{children:p.jsx(Eh,{productId:"7488612368461",nodeId:"product-component-1748583864650"})}),p.jsx(bh,{children:p.jsx(Eh,{productId:"7488882901069",nodeId:"product-component-1748583919176"})})]})]})}),A2=k.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1558,7 +1558,7 @@ object-assign
   text-align: center;
   min-height: 70vh;
   padding: var(--spacing-xl) 0;
-`,A2=k.div`
+`,k2=k.div`
   font-size: 8rem;
   font-weight: 700;
   color: var(--secondary);
@@ -1568,12 +1568,12 @@ object-assign
   @media (max-width: 768px) {
     font-size: 6rem;
   }
-`,k2=k.h1`
+`,C2=k.h1`
   margin-bottom: var(--spacing-md);
-`,C2=k.p`
+`,T2=k.p`
   max-width: 500px;
   margin: 0 auto var(--spacing-lg);
-`,T2=()=>p.jsx(lt,{children:p.jsxs(S2,{children:[p.jsx(A2,{children:"404"}),p.jsx(k2,{children:"Page Not Found"}),p.jsx(C2,{children:"The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."}),p.jsx(me,{as:Be,to:"/",children:"Return to Homepage"})]})}),P2=Iy`
+`,P2=()=>p.jsx(lt,{children:p.jsxs(A2,{children:[p.jsx(k2,{children:"404"}),p.jsx(C2,{children:"Page Not Found"}),p.jsx(T2,{children:"The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."}),p.jsx(me,{as:Be,to:"/",children:"Return to Homepage"})]})}),E2=Iy`
   :root {
     /* Main color palette */
     --primary: #2D3047;
@@ -1679,4 +1679,4 @@ object-assign
       padding: var(--spacing-lg) 0;
     }
   }
-`;function E2(){return p.jsxs(AS,{children:[p.jsxs(Vu,{children:[p.jsx("title",{children:"Anu & Ash | Musical Duo"}),p.jsx("meta",{name:"description",content:"Anu & Ash is a musical duo creating beautiful melodies and powerful performances."}),p.jsx("link",{rel:"stylesheet",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"}),p.jsx("link",{rel:"preconnect",href:"https://fonts.googleapis.com"}),p.jsx("link",{rel:"preconnect",href:"https://fonts.gstatic.com",crossOrigin:"true"}),p.jsx("link",{href:"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap",rel:"stylesheet"})]}),p.jsx(P2,{}),p.jsx(db,{}),p.jsx(YE,{}),p.jsx("main",{children:p.jsxs(Zw,{children:[p.jsx(Nt,{path:"/",element:p.jsx(jb,{})}),p.jsx(Nt,{path:"/shows",element:p.jsx(Kb,{})}),p.jsx(Nt,{path:"/listen",element:p.jsx(dj,{})}),p.jsx(Nt,{path:"/follow",element:p.jsx(vj,{})}),p.jsx(Nt,{path:"/merchandise",element:p.jsx(w2,{})}),p.jsx(Nt,{path:"/about",element:p.jsx(Vj,{})}),p.jsx(Nt,{path:"/contact",element:p.jsx(p2,{})}),p.jsx(Nt,{path:"*",element:p.jsx(T2,{})})]})}),p.jsx(cb,{})]})}$l.createRoot(document.getElementById("root")).render(p.jsx(ke.StrictMode,{children:p.jsx(E2,{})}));
+`;function b2(){return p.jsxs(AS,{children:[p.jsxs(Vu,{children:[p.jsx("title",{children:"Anu & Ash | Musical Duo"}),p.jsx("meta",{name:"description",content:"Anu & Ash is a musical duo creating beautiful melodies and powerful performances."}),p.jsx("link",{rel:"stylesheet",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"}),p.jsx("link",{rel:"preconnect",href:"https://fonts.googleapis.com"}),p.jsx("link",{rel:"preconnect",href:"https://fonts.gstatic.com",crossOrigin:"true"}),p.jsx("link",{href:"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap",rel:"stylesheet"})]}),p.jsx(E2,{}),p.jsx(db,{}),p.jsx(YE,{}),p.jsx("main",{children:p.jsxs(Zw,{children:[p.jsx(Nt,{path:"/",element:p.jsx(jb,{})}),p.jsx(Nt,{path:"/shows",element:p.jsx(Kb,{})}),p.jsx(Nt,{path:"/listen",element:p.jsx(fj,{})}),p.jsx(Nt,{path:"/follow",element:p.jsx(xj,{})}),p.jsx(Nt,{path:"/merchandise",element:p.jsx(S2,{})}),p.jsx(Nt,{path:"/about",element:p.jsx(zj,{})}),p.jsx(Nt,{path:"/contact",element:p.jsx(h2,{})}),p.jsx(Nt,{path:"*",element:p.jsx(P2,{})})]})}),p.jsx(cb,{})]})}$l.createRoot(document.getElementById("root")).render(p.jsx(ke.StrictMode,{children:p.jsx(b2,{})}));
