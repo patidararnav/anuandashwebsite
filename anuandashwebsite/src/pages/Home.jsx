@@ -229,13 +229,13 @@ const Home = () => {
               <p>Don't miss our upcoming show! Join us for an unforgettable night of music and connection.</p>
               
               <EventInfo>
-                <EventDate>August 8, 2025 at 8:00 PM</EventDate>
-                <EventLocation>Eddie Owen Presents - Red Clay Music Foundry</EventLocation>
+                <EventDate>September 5, 2025 at 6:30 PM</EventDate>
+                <EventLocation>Headliner - Sunset Stroll & Concert Series at Arabia Mountain, Stonecrest, GA</EventLocation>
               </EventInfo>
               
               <Button 
                 as="a" 
-                href="https://eddieowenpresents.freshtix.com/events/anuandash" 
+                href="https://www.eventbrite.com/e/6th-annual-sunset-stroll-and-concert-on-top-of-arabia-mountain-tickets-1417179565229" 
                 target="_blank"
                 rel="noopener noreferrer"
               >

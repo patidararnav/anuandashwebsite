@@ -43,7 +43,7 @@ const PageHeader = styled.div`
 
 const MerchandiseGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: calc(var(--spacing-xl) * 2);
   margin: var(--spacing-xl) 0;
   @media (max-width: 600px) {
@@ -123,6 +123,9 @@ const Merchandise = () => {
           </MerchandiseCard>
           <MerchandiseCard>
             <ShopifyProduct productId="7488882901069" nodeId="product-component-1748583919176" />
+          </MerchandiseCard>
+          <MerchandiseCard>
+            <ShopifyProduct productId="7542408020045" nodeId="product-component-1756174601539" />
           </MerchandiseCard>
         </MerchandiseGrid>
       </Container>

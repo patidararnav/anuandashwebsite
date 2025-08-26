@@ -10,6 +10,7 @@ import Follow from './pages/Follow';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Merchandise from './pages/Merchandise';
+import EPK from './pages/EPK';
 import NotFound from './pages/NotFound';
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/epk" element={<EPK />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

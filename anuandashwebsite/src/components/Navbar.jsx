@@ -145,6 +145,7 @@ const Navbar = () => {
             <NavLink to="/merchandise" scrolled={scrolled}>Merchandise</NavLink>
             <NavLink to="/about" scrolled={scrolled}>About</NavLink>
             <NavLink to="/contact" scrolled={scrolled}>Contact</NavLink>
+            <NavLink to="/epk" scrolled={scrolled}>EPK</NavLink>
           </NavLinks>
           
           <MobileMenuButton 
@@ -185,6 +186,9 @@ const Navbar = () => {
               </MobileNavLink>
               <MobileNavLink to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 Contact
+              </MobileNavLink>
+              <MobileNavLink to="/epk" onClick={() => setMobileMenuOpen(false)}>
+                EPK
               </MobileNavLink>
             </MobileNavLinks>
           </MobileMenu>

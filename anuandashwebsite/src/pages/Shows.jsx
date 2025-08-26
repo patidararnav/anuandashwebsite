@@ -148,21 +148,42 @@ const NoShows = styled.div`
 const mockShowsData = [
   {
     id: 1,
+    title: 'Headliner - Sunset Stroll & Concert Series at Arabia Mountain',
+    date: new Date('2025-09-05T18:30:00'),
+    location: 'Stonecrest, GA',
+    ticketLink: 'https://www.eventbrite.com/e/6th-annual-sunset-stroll-and-concert-on-top-of-arabia-mountain-tickets-1417179565229'
+  },
+  {
+    id: 2,
     title: 'Eddie Owen Presents - Red Clay',
-    date: new Date('2025-08-08T20:00:00'),
+    date: new Date('2025-01-17T20:00:00'),
     location: 'Duluth, GA',
-    ticketLink: 'https://eddieowenpresents.freshtix.com/events/anuandash'
+    ticketLink: null // TBA
   }
 ];
 
 // Past shows data
 const mockPastShows = [
   {
-    id: 2,
-    title: 'Eddie\'s Attic - Anu & Ash Live in Concert',
+    id: 3,
+    title: 'SOLD OUT! - Eddie Owen Presents - Red Clay',
+    date: new Date('2025-08-08T20:00:00'),
+    location: 'Duluth, GA',
+    ticketLink: null
+  },
+  {
+    id: 4,
+    title: 'SOLD OUT! - Headliner - Suwanee Summer Porch Fest',
+    date: new Date('2025-06-13T19:00:00'),
+    location: 'Suwanee, GA',
+    ticketLink: null
+  },
+  {
+    id: 5,
+    title: 'SOLD OUT! - Eddie\'s Attic - Anu & Ash Live in Concert',
     date: new Date('2024-09-27T21:00:00'),
     location: 'Decatur, GA',
-    ticketLink: 'https://eddiesattic.com/event/anu-and-ash/', 
+    ticketLink: null, 
     featured: true
   }
 ];
@@ -248,16 +269,20 @@ const Shows = () => {
                   </ShowInfo>
                   
                   <ShowActions>
-                    {show.ticketLink ? (
-                      <Button 
-                        as="a" 
-                        href={show.ticketLink} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        small
-                      >
-                        Get Tickets
-                      </Button>
+                    {filter === 'upcoming' ? (
+                      show.ticketLink ? (
+                        <Button 
+                          as="a" 
+                          href={show.ticketLink} 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          small
+                        >
+                          Get Tickets
+                        </Button>
+                      ) : (
+                        <Button disabled small>TBA</Button>
+                      )
                     ) : (
                       <Button disabled small>Past Event</Button>
                     )}
