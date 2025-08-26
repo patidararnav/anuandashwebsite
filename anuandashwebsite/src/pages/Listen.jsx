@@ -8,6 +8,7 @@ import albumImage from '../assets/landings/landing5.jpg';
 // Album cover images
 import eddiesAtticImage from '../assets/songs/eddiesattic.jpg';
 import coversImage from '../assets/songs/covers.jpg';
+import summerSongImage from '../assets/songs/summersong.jpg';
 
 // Create a wrapper with the background image
 const PageWrapper = styled.div`
@@ -199,6 +200,15 @@ const Listen = () => {
   const albums = [
     {
       id: 1,
+      title: "Summer Song",
+      type: "Single",
+      description: "Our latest single captures the essence of warm memories and summer feelings. A beautiful piece that showcases our signature harmonies.",
+      trackCount: 1,
+      coverImage: summerSongImage,
+      spotify: "https://open.spotify.com/track/75vsnOGucF4WAnsbOIb33e?si=1BapCY4RSyCahTzG9cmBwg"
+    },
+    {
+      id: 2,
       title: "Anu & Ash at Eddie's Attic (Live)",
       type: "Album",
       description: "Our debut live album features original songs performed at the iconic Eddie's Attic venue in Atlanta. Experience the energy and emotion of our live performance through these heartfelt originals.",
@@ -207,7 +217,7 @@ const Listen = () => {
       spotify: "https://open.spotify.com/album/39gQdVgmqSOhtkskKG3iLR"
     },
     {
-      id: 2,
+      id: 3,
       title: "Covers by Anu & Ash at Eddie's Attic (Live)",
       type: "EP",
       description: "Our cover EP showcases our unique interpretations of beloved songs, all performed live at Eddie's Attic.",
