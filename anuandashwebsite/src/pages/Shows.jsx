@@ -147,23 +147,23 @@ const NoShows = styled.div`
 // Show data
 const mockShowsData = [
   {
-    id: 1,
-    title: 'Headliner - Sunset Stroll & Concert Series at Arabia Mountain',
-    date: new Date('2025-09-05T18:30:00'),
-    location: 'Stonecrest, GA',
-    ticketLink: 'https://www.eventbrite.com/e/6th-annual-sunset-stroll-and-concert-on-top-of-arabia-mountain-tickets-1417179565229'
-  },
-  {
     id: 2,
     title: 'Eddie Owen Presents - Red Clay',
     date: new Date('2025-01-17T20:00:00'),
     location: 'Duluth, GA',
-    ticketLink: null // TBA
+    ticketLink: 'https://eddieowenpresents.freshtix.com/events/anuandash2026'
   }
 ];
 
 // Past shows data
 const mockPastShows = [
+  {
+    id: 1,
+    title: 'Headliner - Sunset Stroll & Concert Series at Arabia Mountain',
+    date: new Date('2025-09-05T18:30:00'),
+    location: 'Stonecrest, GA',
+    ticketLink: 'null'
+  },
   {
     id: 3,
     title: 'SOLD OUT! - Eddie Owen Presents - Red Clay',
