@@ -229,13 +229,13 @@ const Home = () => {
               <p>Don't miss our upcoming show! Join us for an unforgettable night of music and connection.</p>
               
               <EventInfo>
-                <EventDate>September 5, 2025 at 6:30 PM</EventDate>
-                <EventLocation>Headliner - Sunset Stroll & Concert Series at Arabia Mountain, Stonecrest, GA</EventLocation>
+                <EventDate>January 17, 2025 at 8:00 PM</EventDate>
+                <EventLocation>Eddie Owen Presents - Red Clay, Duluth, GA</EventLocation>
               </EventInfo>
               
               <Button 
                 as="a" 
-                href="https://www.eventbrite.com/e/6th-annual-sunset-stroll-and-concert-on-top-of-arabia-mountain-tickets-1417179565229" 
+                href="https://eddieowenpresents.freshtix.com/events/anuandash2026?utm_campaign=Freshtix&utm_medium=Freshtix&utm_source=Freshtix" 
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -518,13 +518,13 @@ const About = () => {
             <BioContent>
               <SectionTitle>Our Story</SectionTitle>
               <p>
-                Anu & Ash are an Atlanta-based musical duo composed of vocalist-songwriter Anu and keyboardist-composer Ashwin (Ash). Their partnership began through collaborative music projects and evolved into a harmonious marriage. Together, they blend diverse musical backgrounds to create a unique and captivating sound.
+                Anu & Ash are an Atlanta-based musical duo composed of vocalist-songwriter Anu and keyboardist-composer Ashwin (Ash). Their partnership began through collaborative music projects and evolved into a beautiful and loving marriage. Ashwin and Anu each have decades of experience and bring different perspectives to the music they create together. Ashwin comes from a background of Indian classical and Bollywood-inspired music, and Anu from operatic, choral, and musical theater genres. Together, they blend diverse musical backgrounds to create a unique sound centered in cinematic storytelling.
               </p>
               <p>
-                In December 2024, Anu & Ash released their debut live album, Anu & Ash at Eddie's Attic, capturing the essence of their dynamic performances. Their live shows often feature collaborations with talented artists such as Gurinder Negi on guitar, Amit Narayan on percussion, and King Ai on cello, adding depth and richness to their musical presentations.
+                In December 2024, Anu & Ash released their debut live album on all streaming platforms: "Anu & Ash Live at Eddie's Attic". Subsequently in June 2025, they released their first studio-produced single, "Summer Song" which has gained many listeners both in the US and globally. They continue to produce original music and can't wait to share their art on an ongoing basis.
               </p>
               <p>
-                Anu & Ash continue to enchant audiences with their fusion of musical styles, heartfelt performances, and collaborative spirit.
+                Their live performances have been described as "enchanting", "heartfelt", "cinematic", and "romantic". Anu & Ash believe in not only sharing music, but sharing an experience with their audiences with love and connection. They hope to continue to share their love and reach peoples' hearts.
               </p>
             </BioContent>
             <motion.div
