@@ -230,7 +230,7 @@ const Home = () => {
               
               <EventInfo>
                 <EventDate>January 17, 2025 at 8:00 PM</EventDate>
-                <EventLocation>Eddie Owen Presents - Red Clay, Duluth, GA</EventLocation>
+                <EventLocation>Anu & Ash Variety Show - Red Clay, Duluth, GA</EventLocation>
               </EventInfo>
               
               <Button 

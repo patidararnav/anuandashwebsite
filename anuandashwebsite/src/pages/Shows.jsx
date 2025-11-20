@@ -148,7 +148,7 @@ const NoShows = styled.div`
 const mockShowsData = [
   {
     id: 2,
-    title: 'Eddie Owen Presents - Red Clay',
+    title: 'Anu & Ash Variety Show - Red Clay',
     date: new Date('2025-01-17T20:00:00'),
     location: 'Duluth, GA',
     ticketLink: 'https://eddieowenpresents.freshtix.com/events/anuandash2026'
@@ -166,7 +166,7 @@ const mockPastShows = [
   },
   {
     id: 3,
-    title: 'SOLD OUT! - Eddie Owen Presents - Red Clay',
+    title: 'SOLD OUT! - Anu & Ash Variety Show - Red Clay',
     date: new Date('2025-08-08T20:00:00'),
     location: 'Duluth, GA',
     ticketLink: null
