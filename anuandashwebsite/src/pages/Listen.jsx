@@ -164,7 +164,7 @@ const AlbumTrackCount = styled.div`
 
 const AlbumLinks = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: var(--spacing-sm);
   margin-top: auto;
 `;
@@ -206,7 +206,8 @@ const Listen = () => {
       description: "Our newest single, exploring themes of family, heritage, and the connections that bind us together. A heartfelt piece that showcases our emotional depth.",
       trackCount: 1,
       coverImage: familyCottonImage,
-      spotify: "https://open.spotify.com/track/0Nczb1buIJCT5kNV0Ho4HU"
+      spotify: "https://open.spotify.com/track/0Nczb1buIJCT5kNV0Ho4HU",
+      videoUrl: "https://www.youtube.com/watch?v=PFbfBm5tbis"
     },
     {
       id: 2,
@@ -295,6 +296,12 @@ const Listen = () => {
                       <PlatformButton href={album.spotify} target="_blank" rel="noopener noreferrer" color="#1DB954" style={{ width: '100%' }}>
                         <i className="fab fa-spotify"></i>
                         Listen on Spotify
+                      </PlatformButton>
+                    )}
+                    {album.videoUrl && (
+                      <PlatformButton href={album.videoUrl} target="_blank" rel="noopener noreferrer" color="#FF0000" style={{ width: '100%' }}>
+                        <i className="fab fa-youtube"></i>
+                        Watch Music Video
                       </PlatformButton>
                     )}
                   </AlbumLinks>

@@ -674,6 +674,19 @@ const EPK = () => {
           
           <div className="video-grid">
             <div className="video-embed">
+              <h4>Family Cotton - Official Music Video</h4>
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/PFbfBm5tbis" 
+                title="Family Cotton - Official Music Video" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+                style={{borderRadius: '8px'}}
+              ></iframe>
+            </div>
+            <div className="video-embed">
               <h4>Red Clay Music Foundry Performance</h4>
               <iframe 
                 width="100%" 
