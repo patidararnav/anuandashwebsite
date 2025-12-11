@@ -213,6 +213,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: ''
   });
   
@@ -257,6 +258,7 @@ const Contact = () => {
     setFormData({
       name: '',
       email: '',
+      phone: '',
       message: ''
     });
     setStatus({ submitted: false, loading: false, error: null });
@@ -379,6 +381,18 @@ const Contact = () => {
                     id="email"
                     name="email"
                     value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </FormGroup>
+                
+                <FormGroup>
+                  <Label htmlFor="phone">Phone Number *</Label>
+                  <Input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
                     required
                   />
