@@ -146,17 +146,17 @@ const NoShows = styled.div`
 
 // Show data
 const mockShowsData = [
+];
+
+// Past shows data
+const mockPastShows = [
   {
     id: 2,
     title: 'Anu & Ash Variety Show - Red Clay',
     date: new Date('2025-01-17T20:00:00'),
     location: 'Duluth, GA',
-    ticketLink: 'https://eddieowenpresents.freshtix.com/events/anuandash2026'
-  }
-];
-
-// Past shows data
-const mockPastShows = [
+    ticketLink: null
+  },
   {
     id: 1,
     title: 'Headliner - Sunset Stroll & Concert Series at Arabia Mountain',

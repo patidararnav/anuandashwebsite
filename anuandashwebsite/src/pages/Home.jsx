@@ -128,6 +128,7 @@ const LatestShowImage = styled.div`
   }
 `;
 
+/* Upcoming show section styles - ready for when you add a new show */
 const EventInfo = styled.div`
   margin: var(--spacing-md) 0;
 `;
@@ -225,14 +226,14 @@ const Home = () => {
         <Container>
           <LatestShowGrid>
             <LatestShowContent>
-              <h2>Our Next Performance</h2>
-              <p>Don't miss our upcoming show! Join us for an unforgettable night of music and connection.</p>
-              
+              <h2>New Shows Coming Soon</h2>
+              <p>Check back soon for updates on our performance schedule!</p>
+              {/* Uncomment below when adding a new show - update date, location, and ticket link */}
+              {/* <p>Don't miss our upcoming show! Join us for an unforgettable night of music and connection.</p>
               <EventInfo>
                 <EventDate>January 17, 2025 at 8:00 PM</EventDate>
                 <EventLocation>Anu & Ash Variety Show - Red Clay, Duluth, GA</EventLocation>
               </EventInfo>
-              
               <Button 
                 as="a" 
                 href="https://eddieowenpresents.freshtix.com/events/anuandash2026?utm_campaign=Freshtix&utm_medium=Freshtix&utm_source=Freshtix" 
@@ -240,7 +241,7 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 Get Tickets
-              </Button>
+              </Button> */}
             </LatestShowContent>
             
             <LatestShowImage />
