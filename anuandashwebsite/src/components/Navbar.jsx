@@ -142,7 +142,7 @@ const Navbar = () => {
             <NavLink to="/shows" scrolled={scrolled}>Shows</NavLink>
             <NavLink to="/listen" scrolled={scrolled}>Listen</NavLink>
             <NavLink to="/follow" scrolled={scrolled}>Follow</NavLink>
-            <NavLink to="/merchandise" scrolled={scrolled}>Merchandise</NavLink>
+            {/* <NavLink to="/merchandise" scrolled={scrolled}>Merchandise</NavLink> */}
             <NavLink to="/about" scrolled={scrolled}>About</NavLink>
             <NavLink to="/contact" scrolled={scrolled}>Contact</NavLink>
             <NavLink to="/epk" scrolled={scrolled}>EPK</NavLink>
@@ -178,9 +178,9 @@ const Navbar = () => {
               <MobileNavLink to="/follow" onClick={() => setMobileMenuOpen(false)}>
                 Follow
               </MobileNavLink>
-              <MobileNavLink to="/merchandise" onClick={() => setMobileMenuOpen(false)}>
+              {/* <MobileNavLink to="/merchandise" onClick={() => setMobileMenuOpen(false)}>
                 Merchandise
-              </MobileNavLink>
+              </MobileNavLink> */}
               <MobileNavLink to="/about" onClick={() => setMobileMenuOpen(false)}>
                 About
               </MobileNavLink>
